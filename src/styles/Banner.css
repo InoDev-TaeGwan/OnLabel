@@ -1,0 +1,29 @@
+.bannerContainer {
+    background-image: url("assets/images/NftBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.bannerContainer span{
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.bannerContainer button{
+    width: 240px;
+    height: 51px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    background: linear-gradient(90deg, #00C2E7 0%, #6300F9 100%);
+    box-shadow: 0px 5px 12px rgba(55, 85, 241, 0.2), inset 0px 5px 5px rgba(255, 255, 255, 0.3);
+    border-radius: 26px;
+    border: none;
+    margin: 0 auto;
+
+}

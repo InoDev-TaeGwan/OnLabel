@@ -1,0 +1,88 @@
+{
+  "ProductManage": [
+    {
+      "id":1,
+      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/94765698792861-d59e6a10-9ec8-46aa-aa07-69d3f77e4712.jpg",
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    },
+    {
+      "id":2,
+      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/432119168204016-843c0a23-4494-40c2-8f2d-7d9bf4c7273c.jpg",
+      "product_name": "아이폰 12",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"화이트 색상"
+    },
+    {
+      "id":3,
+      "product_image": "",
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    },
+    {
+      "id":4,
+      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/94765698792861-d59e6a10-9ec8-46aa-aa07-69d3f77e4712.jpg",
+
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    },
+    {
+      "id":5,
+      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/432119168204016-843c0a23-4494-40c2-8f2d-7d9bf4c7273c.jpg",
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    },
+    {
+      "id":6,
+      "product_image": "",
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    },
+    {
+      "id":7,
+      "product_image": "",
+      "product_name": "아이폰 12 pro",
+      "manufacture": "Apple",
+      "origin" : "중국",
+      "comment":"그래파이트 색상"
+    }
+  ],
+  "ProductInfo":{
+    "qr_list":[
+      {
+        "id":1,
+        "qr_name":"line QR",
+        "url":"www.naver.com",
+        "create_date":"2002-03-01",
+        "update_date":"2002-04-02",
+        "scan_count":3,
+        "create_qr_amount":1000000,
+        "qr_image":"qr 이미지 링크",
+        "qr_number":"qr 코드 번호"
+      },
+      {
+        "id":2,
+        "qr_name":"line QR",
+        "url":"www",
+        "create_date":"2002-03-01",
+        "update_date":"2002-04-02",
+        "scan_count":3,
+        "create_qr_amount":1000000,
+        "qr_image":"qr 이미지 링크",
+        "qr_number":"qr 코드 번호"
+      }
+    ]
+  }
+}
+

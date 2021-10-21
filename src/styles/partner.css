@@ -1,0 +1,44 @@
+.partnersContainer .itemBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 165px;
+}
+.partnersContainer .itemBox:last-child{
+    margin-bottom: 0;
+}
+
+.partnersContainer .itemBox .video{
+    width: 654px;
+    height: 374px;
+    border-radius: 32px;
+    filter: drop-shadow(0px 8px 30px rgba(55, 142, 241, 0.16));
+}
+
+.partnersContainer .itemBox .video .imageTitle{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-bottom: 17px;
+}
+
+.partnersContainer .itemBox .contentBox{
+
+}
+
+.partnersContainer .itemBox .contentBox .title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: right;
+    margin-bottom: 12px;
+    display: block;
+}
+.partnersContainer .itemBox .contentBox .subTitle{
+    text-align: right;
+    font-size: 18px;
+    line-height: 27px;
+    display: block;
+}
