@@ -1,86 +1,32 @@
 {
-  "ProductManage": [
-    {
-      "id":1,
-      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/94765698792861-d59e6a10-9ec8-46aa-aa07-69d3f77e4712.jpg",
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    },
-    {
-      "id":2,
-      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/432119168204016-843c0a23-4494-40c2-8f2d-7d9bf4c7273c.jpg",
-      "product_name": "아이폰 12",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"화이트 색상"
-    },
-    {
-      "id":3,
-      "product_image": "",
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    },
-    {
-      "id":4,
-      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/94765698792861-d59e6a10-9ec8-46aa-aa07-69d3f77e4712.jpg",
-
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    },
-    {
-      "id":5,
-      "product_image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/292x292ex/image/retail/images/432119168204016-843c0a23-4494-40c2-8f2d-7d9bf4c7273c.jpg",
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    },
-    {
-      "id":6,
-      "product_image": "",
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    },
-    {
-      "id":7,
-      "product_image": "",
-      "product_name": "아이폰 12 pro",
-      "manufacture": "Apple",
-      "origin" : "중국",
-      "comment":"그래파이트 색상"
-    }
-  ],
-  "ProductInfo":{
-    "qr_list":[
+  "partner":{
+    "partner_list":[
       {
         "id":1,
-        "qr_name":"line QR",
-        "url":"www.naver.com",
-        "create_date":"2002-03-01",
-        "update_date":"2002-04-02",
-        "scan_count":3,
-        "create_qr_amount":1000000,
-        "qr_image":"qr 이미지 링크",
-        "qr_number":"qr 코드 번호"
-      },
-      {
+        "name":"김 성 수",
+        "position":"CEO",
+        "image":"assets/images/ceo.png",
+        "profile_history":
+        [  "카이스트 기계공학, 산업 및 시스템 공학 졸업",
+          "중소기업진흥공단 청년창업사관학교 3기 졸업",
+          "2015' 카이스트 기업가정신 총장상 대상",
+          "前 카이스트 사회기술혁신 연구소 팀장",
+          "前 카이스트 휴모노이드 로봇 '휴보' 팀장",
+          "前 레인보우로보틱스 팀장"]
+
+      },      {
         "id":2,
-        "qr_name":"line QR",
-        "url":"www",
-        "create_date":"2002-03-01",
-        "update_date":"2002-04-02",
-        "scan_count":3,
-        "create_qr_amount":1000000,
-        "qr_image":"qr 이미지 링크",
-        "qr_number":"qr 코드 번호"
+        "name":"김 수 본",
+        "position":"CTO",
+        "image":"assets/images/ceo.png",
+        "profile_history":
+        [  "카이스트 기계공학 학/석사 졸업",
+          "前 지에프테크놀로지 수석 연구원",
+          "수술로봇용 햅틱 피드백 연구개발",
+          "유통관리 및 보안솔루션용 워터마킹 기술 연구개발",
+          "C#/WPF 클라이언트 다수 개발",
+          "Unity 3D, Unreal, C++, android 개발 PM"]
+
       }
     ]
   }

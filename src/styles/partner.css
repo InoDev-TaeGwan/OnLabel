@@ -46,4 +46,6 @@
     font-size: 15px;
     line-height: 24px;
     display: block;
+    white-space: pre-wrap;
+    word-break: break-all
 }

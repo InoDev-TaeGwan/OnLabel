@@ -8,7 +8,7 @@
     list-style: none;
     display: inline-flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* middle line */
@@ -25,43 +25,73 @@
 }
 
 .timeline li {
-    margin: 0 20px;
+    /*margin: 0 20px;*/
     min-width: 200px;
     align-self: flex-end; }
 
-/*  event in even position are bottom-aligned */
-/*.timeline li:nth-child(2n) { align-self: flex-end;  }*/
-
-.timeline div {
+.timeline .contentBox {
     position: relative;
-    padding: 10px;
+    /*padding: 10px;*/
+    margin-left:120px;
+    text-align: center;
 }
-
+.timeline .contentBox .year{
+    width: 100%;
+    position: absolute;
+    top: -85px;
+    left: 25px;
+}
+.timeline .contentBox .detail span{
+    font-size: 18px;
+    display: block;
+    /*margin-bottom: 40px;*/
+}
+.timeline .one .year{
+    color:#00C2E7;
+    font-weight: bold;
+    font-size: 24px;
+}
+.timeline .two .year{
+    color:#247CEE;
+    font-weight: bold;
+    font-size: 24px;
+}
+.timeline .three .year{
+    color:#4046F3;
+    font-weight: bold;
+    font-size: 24px;
+}
+.timeline .four .year{
+    color:#5B10F8;
+    font-weight: bold;
+    font-size: 24px;
+}
 /* style for the dot over the timeline */
 .timeline li:before {
     content: "";
     position: absolute;
-    top: 50%;
-    margin-left: 100px;
+    top: calc(50% + 1px);
+    /*margin-left: 100px;*/
+    margin-left: 200px;
     transform: translate(-50%, -50%);
     border: 1px #9bc solid;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background:  var(--timeline-color);
-
+    background-color:#fff;
 }
 
-/* position of the event arrow in odd position */
-.timeline li:nth-child(2n - 1) div:before {
-    top: 100%;
-    margin-top: -8px;
-    border-right: 1px var(--timeline-color) solid;
-    border-bottom: 1px var(--timeline-color) solid; }
+.timeline .one:before{
+    border: 2px solid #00C2E7;
+}
+.timeline .two:before{
+    border: 2px solid #247CEE;
+}
+.timeline .three:before{
+    border: 2px solid #4046F3;
+}
+.timeline .four:before{
+    border: 2px solid #5B10F8;
+}
 
-/* position of the event arrow in even position */
-.timeline li:nth-child(2n) div:before {
-    top: 0;
-    margin-top: -10px;
-    border-left: 1px var(--timeline-color) solid;
-    border-top: 1px var(--timeline-color) solid; }
+
