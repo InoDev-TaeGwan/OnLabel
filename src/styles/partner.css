@@ -9,18 +9,19 @@
     margin-bottom: 0;
 }
 
-.partnersContainer .itemBox .video{
+.partnersContainer .itemBox .partnerImage{
     width: 654px;
-    height: 374px;
     border-radius: 32px;
     filter: drop-shadow(0px 8px 30px rgba(55, 142, 241, 0.16));
+    text-align: center;
 }
 
-.partnersContainer .itemBox .video .imageTitle{
+.partnersContainer .itemBox .partnerImage .imageTitle{
     font-weight: bold;
     font-size: 24px;
     text-align: center;
     display: block;
+    padding-top: 25px;
     margin-bottom: 17px;
 }
 
@@ -30,15 +31,19 @@
 
 .partnersContainer .itemBox .contentBox .title{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 45px;
-    text-align: right;
-    margin-bottom: 12px;
+    margin-bottom: 50px;
     display: block;
 }
-.partnersContainer .itemBox .contentBox .subTitle{
-    text-align: right;
-    font-size: 18px;
-    line-height: 27px;
+.partnersContainer .itemBox .contentBox .companyName{
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.partnersContainer .itemBox .contentBox .contentText{
+    font-size: 15px;
+    line-height: 24px;
     display: block;
 }

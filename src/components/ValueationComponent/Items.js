@@ -1,5 +1,5 @@
 import React from "react";
-import video1 from "assets/video/video4.mp4";
+import video1 from "assets/video/video2-3.mp4";
 
 const Items = ({ reverse }) => {
   console.log(reverse);
