@@ -5,7 +5,7 @@ import company from "assets/images/useb.png";
 
 const PartnersComponent = () => {
   return (
-    <div className="partnersContainer wrap">
+    <div className="partnersContainer wrap" id="partners">
       <Items
         companyImg={company}
         title="KEY PARTNERS #1"

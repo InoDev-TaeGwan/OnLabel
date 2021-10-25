@@ -5,7 +5,7 @@ import {adviserData} from "utils/dumy";
 
 const AdviserComponent = () => {
   return (
-    <div className="teamAContainer wrap">
+    <div className="teamAContainer wrap" id="adviser">
       <span className="title">ADVISER</span>
       <div className="profileBox">
           {adviserData.map((adviser) => (

@@ -152,6 +152,7 @@
     box-shadow: 0 8px 30px rgba(55, 142, 241, 0.16);
     border-radius: 26px;
 }
+
 .sideMenu .labelLogo{
     width: 125px;
     height: 27px;
@@ -163,4 +164,9 @@
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.sideMenu .sideActive span{
+    color:#3755F1;
 }

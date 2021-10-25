@@ -6,7 +6,7 @@ import roadMap from 'assets/images/roadMap.png';
 const RoadmapComponent = () => {
   return (
     <>
-      <div className="roadmapContainer">
+      <div className="roadmapContainer" id="roadMap">
         <span className="title">ROADMAP</span>
           <img src={roadMap} alt="roadMapImg" width="100%" />
 

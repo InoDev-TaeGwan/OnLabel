@@ -42,7 +42,7 @@ const ContactComponent = () => {
     }, []);
 
     return (
-        <div className="contactContainer wrap">
+        <div className="contactContainer wrap" id="contact">
             <span className="title">CONTACT US</span>
             <div className="formContainer">
                 <div className="inputContainer">

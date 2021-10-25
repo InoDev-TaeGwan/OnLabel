@@ -5,7 +5,7 @@ import { partnerData } from "utils/dumy.js";
 
 const TeamComponent = () => {
   return (
-    <div className="teamAContainer wrap">
+    <div className="teamAContainer wrap" id="team">
       <span className="title">TEAM</span>
       <div className="profileBox">
         {partnerData.map((partner) => (
