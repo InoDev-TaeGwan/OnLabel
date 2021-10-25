@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 
 import LabelLogo from 'assets/images/LabelLogo.png';
 import arrow from 'assets/icons/arrow(blue).svg';
+import whitePaper from 'assets/211021_label_white_paper.pdf';
+
+
 
 const Footer = () => {
     return (
@@ -11,9 +14,11 @@ const Footer = () => {
                     <div className="labelLogo">
                         <img src={LabelLogo} alt="LabelLogo" />
                     </div>
-                    <button className="whitePaperDown">
+                    <button className="whitePaperDown" >
+                        <a href={whitePaper} target="blank">
                         <span>WHITE PAPER</span>
                         <img src={arrow} alt="arrow icon" />
+                        </a>
                     </button>
                 </div>
                 <div className="privacyPolicy">

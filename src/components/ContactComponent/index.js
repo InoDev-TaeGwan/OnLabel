@@ -10,7 +10,7 @@ const ContactComponent = () => {
         email: '',
         message: '',
     });
-    const [isSuccess, setIsSuccess] = useState(false);
+    // const [isSuccess, setIsSuccess] = useState(false);
     const [clickCount, setClickCount] = useState(0);
 
     const onSubmitContactUs = async (event) => {
@@ -24,22 +24,24 @@ const ContactComponent = () => {
                     createAt: Date.now(),
                 });
                 reset();
-                setIsSuccess(true);
+                window.alert('접수되었습니다.')
+                // setIsSuccess(true);
                 setClickCount(0);
             } else {
-                setIsSuccess(false);
+                window.alert('잠시후 다시 시도해주세요.')
+                // setIsSuccess(false);
                 setClickCount(clickCount + 1);
             }
         } catch (error) {
-            setIsSuccess(false);
+            // setIsSuccess(false);
             setClickCount(clickCount + 1);
         }
 
     };
 
-    const handleConfirm = useCallback(() => {
-        setIsSuccess(false);
-    }, []);
+    // const handleConfirm = useCallback(() => {
+    //     setIsSuccess(false);
+    // }, []);
 
     return (
         <div className="contactContainer wrap" id="contact">
@@ -89,18 +91,18 @@ const ContactComponent = () => {
                 </div>
                 <button onClick={onSubmitContactUs} className="sendbtn">
                     Send Message
-                </button>
-                {isSuccess ? (
-                    <div>
-                        success message{' '}
-                        <button onClick={handleConfirm}>확인</button>
-                    </div>
-                ) : (
-                    <div>
-                        fail message{' '}
-                        <button onClick={handleConfirm}>확인</button>
-                    </div>
-                )}
+                </button>              {/*{isSuccess ? (*/}
+                {/*    <div>*/}
+                {/*        success message{' '}*/}
+                {/*        <button onClick={handleConfirm}>확인</button>*/}
+                {/*    </div>*/}
+                {/*) : (*/}
+                {/*    <div>*/}
+                {/*        fail message{' '}*/}
+                {/*        <button onClick={handleConfirm}>확인</button>*/}
+                {/*    </div>*/}
+                {/*)}
+  */}
             </div>
         </div>
     );

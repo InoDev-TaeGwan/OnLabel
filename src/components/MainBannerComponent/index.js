@@ -14,7 +14,9 @@ const MainBannerComponent = () => {
             <span className="subTitle">
               LABEL을 사용하여 당신의 디지털 자산을 보호하세요.
             </span>
+            <a href="https://www.waterlabelproducts.com/" target='black'>
             <button className="createButton" />
+            </a>
           </div>
         </div>
         {/*<div className="mainVideoBannerContainer">*/}
