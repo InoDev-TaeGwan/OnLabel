@@ -4,16 +4,33 @@
     background-image: url("../assets/images/MainBannerBG.png");
     background-repeat: no-repeat;
     background-size: cover;
-
     padding-top: 160px;
+    padding-left:300px;
     box-sizing: border-box;
+    margin-bottom: 85px;
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: center;*/
+}
+
+.mainVideoBannerContainer{
+    width: 100%;
+    height: 825px;
+
+    margin-bottom: 85px;
+}
+.mainVideoBannerContainer .bgContent{
+    padding-top: 160px;
+    padding-left:300px;
+    box-sizing: border-box;
+}
+.mainVideoBannerContainer video{
+    width: 100%;
+    height: 100%;
 
 }
 
-.mainBannerContainer .title{
+.mainVideoBannerContainer .title, .mainBannerContainer .title{
     font-weight: bold;
     font-size: 54px;
     line-height: 81px;
@@ -22,7 +39,7 @@
     display: block;
     margin-bottom: 21px;
 
-}.mainBannerContainer .subTitle{
+}.mainVideoBannerContainer .subTitle, .mainBannerContainer .subTitle{
      font-weight: bold;
      font-size: 20px;
      text-align: center;
@@ -30,7 +47,8 @@
      color:#fff;
      margin-bottom: 56px;
 
-}.mainBannerContainer .createButton{
+}
+.mainVideoBannerContainer .createButton, .mainBannerContainer .createButton{
       display: block;
       background-color: inherit;
       background-image: url("../assets/images/CreateNFTbutton.png");
@@ -41,4 +59,8 @@
       height: 51px;
       border: none;
       margin: 0 auto;
+    cursor: pointer;
 }
+
+
+

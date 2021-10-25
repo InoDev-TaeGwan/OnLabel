@@ -2,14 +2,165 @@
     background-color: #fff;
     width: 100%;
     /*height: 100vh;*/
+    position: relative;
 }
+
 .wrap{
     max-width: 1420px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 200px;
+    padding-left: 300px;
 }
-/*.wrap.banner{*/
-/*    max-width: 100%;*/
-/*    height: 100%;*/
-/*}*/
+
+
+.footerContainer{
+    background: rgba(55, 142, 241, 0.06);
+    padding: 50px 0;
+}
+.footerContainer .footerContentBox{
+    max-width: 1420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerContainer .footerContentBox .whitePaper .labelLogo{
+    width: 125px;
+    height: 27px;
+    margin-bottom: 35px;
+}
+
+.footerContainer .footerContentBox .whitePaper .whitePaperDown{
+    background: rgba(36, 124, 238, 0.1);
+    border-radius: 23px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+
+}
+
+.footerContainer .footerContentBox .whitePaper .whitePaperDown span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:8px;
+    color:#3755F1;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footerContainer .footerContentBox .whitePaper .whitePaperDown img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 17.5px;
+    height:18px;
+}
+
+.footerContainer .footerContentBox .whitePaper .whitePaperDown:hover img{
+    position: relative;
+    animation: slideArrow 1.1s linear infinite;
+
+}
+@keyframes slideArrow {
+    0%   {left:2px; }
+    50% {left:10px; }
+    100% {left:2px; }
+}
+
+.footerContainer .footerContentBox .footerTitle{
+    font-weight: bold;
+    font-size: 15px;
+    color:#333;
+    margin-bottom: 20px;
+    display: block;
+}
+.footerContainer .footerContentBox .content{
+    font-size: 15px;
+    color:#333;
+    display: block;
+    margin-bottom: 10px;
+}
+.footerContainer .footerContentBox .content:last-child{
+    margin-bottom: 0;
+}
+
+.footerContainer .footerContentBox .snsLink .sns{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.footerContainer .footerContentBox .snsLink .sns:last-child{
+    margin-right: 0;
+}
+.footerContainer .footerContentBox .snsLink .sns.twitter{
+    background-image: url("assets/icons/twitter_gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerContainer .footerContentBox .snsLink .sns.twitter:hover{
+    background-image: url("assets/icons/twitter_blue.svg");
+}
+
+.footerContainer .footerContentBox .snsLink .sns.telegram{
+    background-image: url("assets/icons/telegram_gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerContainer .footerContentBox .snsLink .sns.telegram:hover{
+    background-image: url("assets/icons/telegram_blue.svg");
+}
+
+.footerContainer .footerContentBox .snsLink .sns.discord{
+    background-image: url("assets/icons/discord_gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerContainer .footerContentBox .snsLink .sns.discord:hover{
+    background-image: url("assets/icons/discord_blue.svg");
+}
+
+.footerContainer .footerContentBox .snsLink .sns.kakao{
+    background-image: url("assets/icons/kakao_gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerContainer .footerContentBox .snsLink .sns.kakao:hover{
+    background-image: url("assets/icons/kakao_blue.svg");
+}
+
+.footerContainer .footerContentBox .snsLink .sns.medium{
+    background-image: url("assets/icons/medium_gray.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footerContainer .footerContentBox .snsLink .sns.medium:hover{
+    background-image: url("assets/icons/medium_blue.svg");
+}
+
+/* sideMenu */
+.sideMenu{
+    position: fixed;
+    top: 90px;
+    left: 40px;
+    z-index: 100;
+    padding:40px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(55, 142, 241, 0.16);
+    border-radius: 26px;
+}
+.sideMenu .labelLogo{
+    width: 125px;
+    height: 27px;
+    margin-bottom: 35px;
+}
+.sideMenu span{
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
