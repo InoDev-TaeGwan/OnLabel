@@ -91,7 +91,8 @@ const ContactComponent = () => {
                 </div>
                 <button onClick={onSubmitContactUs} className="sendbtn">
                     Send Message
-                </button>              {/*{isSuccess ? (*/}
+                </button>
+                {/*{isSuccess ? (*/}
                 {/*    <div>*/}
                 {/*        success message{' '}*/}
                 {/*        <button onClick={handleConfirm}>확인</button>*/}
