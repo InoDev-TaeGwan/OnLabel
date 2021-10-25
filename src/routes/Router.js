@@ -8,7 +8,7 @@ const RouterApp = ({ isSignIn, userObj }) => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/temp">
+                <Route exact path="/">
                     <MainPage />
                 </Route>
                 {isSignIn ? (
