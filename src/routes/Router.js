@@ -4,7 +4,7 @@ import MainPage from 'pages/MainPage';
 import AdminPage from 'pages/Admin/AdminPage';
 import SignInPage from 'pages/Admin/SignInPage';
 
-const RouterApp = ({ isSignIn, userObj }) => {
+const RouterApp = ({ isSignIn }) => {
     return (
         <BrowserRouter>
             <Switch>
