@@ -11,7 +11,7 @@ import kemo from 'assets/images/profile/KEMO.png';
 import itpm from 'assets/images/profile/itpm.jpg';
 import leehaegyung from 'assets/images/profile/leehaegyung.jpg';
 import seajoonyoung from 'assets/images/profile/seajoonyoung.jpg';
-import kimyoojin from 'assets/images/profile/kimyoojin.png';
+import kimyoojin from 'assets/images/profile/kimyoojin.PNG';
 import naduckyoung from 'assets/images/profile/naduckyoung.png';
 
 /* Adviser */
