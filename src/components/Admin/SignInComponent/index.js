@@ -20,14 +20,9 @@ const SignInComponent = () => {
 
     const onClick = async (event) => {
         event.preventDefault();
-        let data;
-        try {
-            data = await authService.signInWithEmailAndPassword(
-                email,
-                password
-            );
 
-            console.log(data);
+        try {
+            await authService.signInWithEmailAndPassword(email, password);
         } catch (error) {
             setError(error.message);
         }
@@ -58,7 +53,11 @@ const SignInComponent = () => {
                         placeholder="password"
                     />
                 </div>
-                {error ? <span className="errorMsg">* 이메일 혹은 비밀번호를 확인해주세요</span> : null}
+                {error ? (
+                    <span className="errorMsg">
+                        * 이메일 혹은 비밀번호를 확인해주세요
+                    </span>
+                ) : null}
                 <div className="buttonContainer">
                     <button onClick={onClick}>Sign In</button>
                 </div>
