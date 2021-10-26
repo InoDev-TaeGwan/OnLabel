@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 
 const Profile = memo(({ name, position, image, profileHistory }) => {
-  console.log(profileHistory);
   return (
     <div className="profile">
       <div className="nameImage">
