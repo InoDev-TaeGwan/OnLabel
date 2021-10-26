@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useCallback} from "react";
 // import mainBG from 'assets/video/mainBanner.mp4';
 
 const MainBannerComponent = () => {
+  const handleNFT = useCallback(()=>{
+    window.open('https://www.waterlabelproducts.com/');
+  },[])
   return (
       <>
         <div className="mainBannerContainer">
@@ -14,9 +17,7 @@ const MainBannerComponent = () => {
             <span className="subTitle">
               LABEL을 사용하여 당신의 디지털 자산을 보호하세요.
             </span>
-              <a href="https://www.waterlabelproducts.com/" target='black'>
-              <div className="createButton" />
-              </a>
+              <div className="createButton" onClick={handleNFT} />
           </div>
         </div>
         {/*<div className="mainVideoBannerContainer">*/}

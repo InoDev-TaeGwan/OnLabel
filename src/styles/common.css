@@ -88,6 +88,11 @@
     cursor: pointer;
 
 }
+.CreateNFTcontainer{
+    width: 240px;
+    height: 55px;
+    margin: 0 auto;
+}
 /*.CreateNFT_shadow{*/
 /*    width: 240px;*/
 /*    height: 51px;*/
