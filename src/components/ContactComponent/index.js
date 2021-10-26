@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import personIcon from 'assets/icons/person.svg';
 import mailIcon from 'assets/icons/mail.svg';
 import { dbService } from '../../FireBase';

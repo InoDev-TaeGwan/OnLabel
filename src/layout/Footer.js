@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 
 import LabelLogo from 'assets/images/LabelLogo.png';
 import arrow from 'assets/icons/arrow(blue).svg';

@@ -12,7 +12,12 @@
     /*align-items: center;*/
     /*justify-content: center;*/
 }
-
+.mainBannerContainer a{
+    width: 240px;
+    height: 51px;
+    display: block;
+    margin: 0 auto;
+}
 .mainVideoBannerContainer{
     width: 100%;
     height: 825px;
@@ -35,6 +40,9 @@
 
 }
 
+
+
+
 .mainVideoBannerContainer .title, .mainBannerContainer .title{
     font-weight: bold;
     font-size: 54px;
@@ -53,6 +61,7 @@
      margin-bottom: 56px;
 
 }
+
 .mainVideoBannerContainer .createButton, .mainBannerContainer .createButton{
       display: block;
       background-color: inherit;
@@ -60,8 +69,10 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      width: 240px;
-      height: 51px;
+      /*width: 240px;*/
+      /*height: 51px;*/
+    width: 100%;
+      height: 100%;
       border: none;
       margin: 0 auto;
     cursor: pointer;

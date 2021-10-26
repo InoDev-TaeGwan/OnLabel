@@ -4,7 +4,7 @@ import React from "react";
 const MainBannerComponent = () => {
   return (
       <>
-        <div className="mainBannerContainer" id="main">
+        <div className="mainBannerContainer">
           <div>
             <span className="title">
               디지털 자산에 대한 증명은
@@ -14,9 +14,9 @@ const MainBannerComponent = () => {
             <span className="subTitle">
               LABEL을 사용하여 당신의 디지털 자산을 보호하세요.
             </span>
-            <a href="https://www.waterlabelproducts.com/" target='black'>
-            <button className="createButton" />
-            </a>
+              <a href="https://www.waterlabelproducts.com/" target='black'>
+              <div className="createButton" />
+              </a>
           </div>
         </div>
         {/*<div className="mainVideoBannerContainer">*/}
