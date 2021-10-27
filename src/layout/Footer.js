@@ -27,9 +27,9 @@ const Footer = ({ whitePaper }) => {
                 <div className="contactUs">
                     <span className="footerTitle">CONTACT US</span>
                     <span className="content">ceo@waterlabel.io</span>
-                    <span className="content">
-                        singapore singapore singapore singapore
-                    </span>
+                    {/*<span className="content">*/}
+                    {/*    singapore singapore singapore singapore*/}
+                    {/*</span>*/}
                 </div>
                 <div className="snsLink">
                     <span className="footerTitle">SNS LINK</span>

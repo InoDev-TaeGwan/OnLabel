@@ -14,27 +14,35 @@ const CreateNFT = ({shadowBtn}) => {
         <>
             {shadowBtn ?
                 (
-                    <div className="CreateNFTcontainer" onMouseLeave={handleButton} onMouseEnter={handleButton}>
+                    <>
                         {isButton ? (
-                            // <a href="https://www.waterlabelproducts.com/" target='black'>
-                                <button className="CreateNFTActive_shadow" onClick={handleNFT} />
-                            // </a>
+                                <button className="CreateNFTActive_shadow" onClick={handleNFT} onMouseLeave={handleButton} onMouseEnter={handleButton}>
+                                    <div className="subBackground">
+                                        <span>
+                                        Create NFT
+                                        </span>
+                                    </div>
+                                </button>
                         ) : (
-                            <button className="CreateNFT_shadow" />
+                            <button className="CreateNFT_shadow"  onMouseLeave={handleButton} onMouseEnter={handleButton}>
+                                Create NFT
+                            </button>
                         )}
-                    </div>
+                    </>
                 ):(
-                    <div className="CreateNFTcontainer" onMouseLeave={handleButton} onMouseEnter={handleButton}>
-                        {/*<a href="https://www.waterlabelproducts.com/" target='black'>*/}
+                    <>
                         {isButton ? (
-                            // <a href="https://www.waterlabelproducts.com/" target='black'>
-                                <button className="CreateNFT" onClick={handleNFT} />
-                            // </a>
+                            <button className="CreateNFTActive" onClick={handleNFT} onMouseLeave={handleButton} onMouseEnter={handleButton}>
+                                <div className="subBackground">
+                                    Create NFT
+                                </div>
+                            </button>
                         ) : (
-                            <button className="CreateNFTActive" />
-                        )}
-                        {/*</a>*/}
-                    </div>
+                            <button className="CreateNFT" onMouseLeave={handleButton} onMouseEnter={handleButton}>
+                                Create NFT
+                            </button>
+                            )}
+                    </>
                 )
             }
         </>
