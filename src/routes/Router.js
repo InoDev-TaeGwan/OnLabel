@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainPage from 'pages/MainPage';
 import AdminPage from 'pages/Admin/AdminPage';
 import SignInPage from 'pages/Admin/SignInPage';
-import TestStorage from '../pages/Admin/TestStorage';
+import TestPage from '../pages/Admin/TestPage';
 
 const RouterApp = ({ isSignIn }) => {
     return (
@@ -13,7 +13,7 @@ const RouterApp = ({ isSignIn }) => {
                     <MainPage />
                 </Route>
                 <Route exact path="/test">
-                    <TestStorage />
+                    <TestPage />
                 </Route>
                 {isSignIn ? (
                     <Route exact path="/admin">
