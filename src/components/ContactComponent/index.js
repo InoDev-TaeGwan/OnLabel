@@ -3,6 +3,7 @@ import personIcon from 'assets/icons/person.svg';
 import mailIcon from 'assets/icons/mail.svg';
 import { dbService } from '../../FireBase';
 import useInputs from '../../hooks/useInputs';
+import SendMessage from "../../shared/SendMessage";
 
 const ContactComponent = () => {
     const [{ name, email, message }, onChange, reset] = useInputs({
@@ -61,7 +62,7 @@ const ContactComponent = () => {
                                 />
                                 <img src={personIcon} alt="userIcon" />
                             </div>
-                            {!name && clickCount > 0 && <span>필수 입력 항목 입니다.</span>}
+                            {!name && clickCount > 0 && <span className="error">필수 입력 항목 입니다.</span>}
                         </div>
                         <div>
                             <span className="label">E-MAIL</span>
@@ -75,7 +76,7 @@ const ContactComponent = () => {
                                 />
                                 <img src={mailIcon} alt="userIcon" />
                             </div>
-                            {!email && clickCount > 0 && <span>반드시 Email을 입력해주세요.</span>}
+                            {!email && clickCount > 0 && <span className="error">반드시 Email을 입력해주세요.</span>}
                         </div>
                     </div>
                     <div className="right">
@@ -86,12 +87,12 @@ const ContactComponent = () => {
                             value={message}
                             onChange={onChange}
                         />
-                        {!message && clickCount > 0 && <div>필수 입력 항목입니다.</div>}
+                        {!message && clickCount > 0 && <div className="error">필수 입력 항목입니다.</div>}
                     </div>
                 </div>
-                <button onClick={onSubmitContactUs} className="sendbtn">
-                    Send Message
-                </button>
+                <div style={{padding:'0 50px'}}>
+                <SendMessage handleSendMessage={onSubmitContactUs} />
+                </div>
                 {/*{isSuccess ? (*/}
                 {/*    <div>*/}
                 {/*        success message{' '}*/}

@@ -5,7 +5,7 @@ const profileName = [
     'leehaegyung.jpg',
     'yoondaegen.png',
     'seajoonyoung.jpg',
-    'kimyoojin.PNG',
+    'kimyoojin.png',
     'cto.jpg',
     'dev1.png',
     'dev2.jpg',

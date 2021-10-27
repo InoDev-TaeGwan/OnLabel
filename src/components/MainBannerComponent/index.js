@@ -7,7 +7,7 @@ const MainBannerComponent = () => {
   },[])
   return (
       <>
-        <div className="mainBannerContainer">
+        <div className="mainBannerContainer" id="main">
           <div>
             <span className="title">
               디지털 자산에 대한 증명은
@@ -17,7 +17,13 @@ const MainBannerComponent = () => {
             <span className="subTitle">
               LABEL을 사용하여 당신의 디지털 자산을 보호하세요.
             </span>
-              <div className="createButton" onClick={handleNFT} />
+            <button className="CreateNFTActive_shadow" onClick={handleNFT} style={{display:'block', margin:'0 auto'}}>
+              <div className="subBackground">
+                <span>
+                Create NFT
+                </span>
+              </div>
+            </button>
           </div>
         </div>
         {/*<div className="mainVideoBannerContainer">*/}

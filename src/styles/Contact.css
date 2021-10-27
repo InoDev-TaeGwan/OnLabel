@@ -16,10 +16,12 @@
     align-items: center;
     margin-bottom: 50px;
     text-align: left;
-
+}
+.contactContainer .formContainer .inputContainer .error{
+    color:red;
 }
 .contactContainer .formContainer .left {
-    width: 605px
+    width: 570px
 }
 
 .contactContainer .formContainer .left .label,.contactContainer .formContainer .right .label{
