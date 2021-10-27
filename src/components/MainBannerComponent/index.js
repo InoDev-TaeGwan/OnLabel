@@ -7,7 +7,7 @@ const MainBannerComponent = () => {
   },[])
   return (
       <>
-        <div className="mainBannerContainer">
+        <div className="mainBannerContainer" id="main">
           <div>
             <span className="title">
               디지털 자산에 대한 증명은

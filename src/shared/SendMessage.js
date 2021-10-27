@@ -15,7 +15,6 @@ const SendMessage = ({handleSendMessage}) => {
                     Send Message
                 </div>
             </button>
-
             }
         </>
 
