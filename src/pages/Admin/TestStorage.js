@@ -4,7 +4,7 @@ import { storageService } from '../../FireBase';
 const TestStorage = () => {
     const [list, setList] = useState('');
     const getStorage = useCallback(async () => {
-        const reference = storageService.ref().child('/');
+        const reference = storageService.ref().child('/profile');
         const list = await reference.listAll();
         list.items.forEach((element) => {
             console.log(element.name);
