@@ -29,3 +29,6 @@
 .AdminTableContainer .id{
     width:80px
 }
+.AdminTableContainer .checkIcon svg path{
+    color:#008000;
+}

@@ -1,48 +1,100 @@
-import React, {useCallback, useRef, useEffect} from 'react';
+import React, { useRef, useEffect,useState} from 'react';
 import TableItem from "./TableItem";
+import {dbService} from "FireBase";
 
 const Table = () => {
-    const datas = [
-        {
-            id:990,
-            name:'name1',
-            email:'ceo@onlabel.io',
-            contact:false,
-            message:'message message message message message990'
-        },
-        {
-            id:991,
-            name:'name2',
-            email:'ceo2@onlabel.io',
-            contact:true,
-            message:'message message message message message991'
-        },
-        {
-            id:992,
-            name:'name3',
-            email:'ceo3@onlabel.io',
-            contact:false,
-            message:'message message message message message992'
-        },
-        {
-            id:993,
-            name:'name4',
-            email:'ceo4@onlabel.io',
-            contact:true,
-            message:'message message message message message993'
-        },
-    ]
+    const [table, setTable] = useState([]);
+    const [isAsc, setIsAsc] = useState({ date: false, answer: false });
+
+    const convertTimestamp = (timestamp) => {
+        const now = new Date();
+        const postDay = new Date(timestamp);
+        let minus;
+        if (now.getFullYear() > postDay.getFullYear()) {
+            minus = `${now.getFullYear() - postDay.getFullYear()}년 전`;
+        } else if (now.getMonth() > postDay.getMonth()) {
+            minus = `${now.getMonth() - postDay.getMonth()}달 전`;
+        } else if (now.getDate() > postDay.getDate()) {
+            minus = `${now.getDate() - postDay.getDate()}일 전`;
+        } else if (now.getDate() === postDay.getDate()) {
+            const nowTime = now.getTime();
+            const postTime = postDay.getTime();
+            if (nowTime > postTime) {
+                let sec = parseInt(
+                    `${(now.getTime() - postDay.getTime()) / 1000}`
+                );
+                let day = parseInt(`${sec / 60 / 60 / 24}`);
+                sec = sec - day * 60 * 60 * 24;
+                let hour = parseInt(`${sec / 60 / 60}`);
+                sec = sec - hour * 60 * 60;
+                let min = parseInt(`${sec / 60}`);
+                sec = parseInt(`${sec - min * 60}`);
+                if (hour > 0) {
+                    minus = `${hour}시간 전`;
+                } else if (min > 0) {
+                    minus = `${min}분 전`;
+                } else if (sec > 0) {
+                    minus = `${sec}초 전`;
+                }
+            }
+        }
+        return minus;
+    };
+
+    useEffect(() => {
+        dbService
+            .collection('contact')
+            .orderBy('createAt', 'desc')
+            .onSnapshot((snapshot) => {
+                const messageArray = snapshot.docs.map((doc) => ({
+                    id: doc.id,
+                    ...doc.data(),
+                    compareNow: convertTimestamp(doc.data().createAt),
+                }));
+
+                setTable(messageArray);
+                console.log(messageArray)
+            });
+    }, []);
+
+    const onSortClick = (e, name) => {
+        e.preventDefault();
+        // const { name } = event.target;
+        if (name === 'dateSort') {
+            table.sort((a, b) => {
+                if (isAsc.date) {
+                    return b.createAt - a.createAt;
+                } else {
+                    return a.createAt - b.createAt;
+                }
+            });
+            setTable(table);
+            setIsAsc({ answer: false, date: !isAsc.date });
+        } else if (name === 'answerSort') {
+            table.sort((a, b) => {
+                if (isAsc.answer) {
+                    return b.isContact - a.isContact;
+                } else {
+                    return a.isContact - b.isContact;
+                }
+            });
+            setTable(table);
+            setIsAsc({ date: true, answer: !isAsc.answer });
+        }
+    };
+
+    // console.log(table)
 
     const messageRef = useRef();
     const selectedItem = false;
 
-    useEffect(()=>{
-        messageRef.current.style.display = 'none'
-    },[])
-
-    const handleMessage = useCallback(()=> {
-        messageRef.current.style.display = ''
-    },[])
+    // useEffect(()=>{
+    //     messageRef.current.style.display = 'none'
+    // },[])
+    //
+    // const handleMessage = useCallback(()=> {
+    //     messageRef.current.style.display = ''
+    // },[])
 
     return (
         <>
@@ -53,22 +105,19 @@ const Table = () => {
                         <th className="id">NO</th>
                         <th>이름</th>
                         <th>이메일</th>
-                        <th>등록 날짜</th>
-                        <th>답변 확인 여부</th>
+                        <th onClick={(e)=>onSortClick(e,'dateSort')}>등록 날짜</th>
+                        <th onClick={(e)=>onSortClick(e,'answerSort')}>답변 확인 여부</th>
                         <th />
                     </tr>
                     </thead>
                     <tbody>
-                    {datas.map(
-                        (data)=>
+                    {table.map(
+                        (item,index)=>
                             <TableItem
-                                key={data.id}
-                                id={data.id}
-                                name={data.name}
-                                email={data.email}
-                                contact={data.contact}
-                                message={data.message}
-                                handleMessage={handleMessage}
+                                key={item.id}
+                                item={item}
+                                index={index}
+                                // handleMessage={handleMessage}
                                 selectedItem={selectedItem}
                                 messageRef={messageRef}
                                  />)
