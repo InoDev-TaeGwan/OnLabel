@@ -3,7 +3,7 @@ import personIcon from 'assets/icons/person.svg';
 import mailIcon from 'assets/icons/mail.svg';
 import { dbService } from '../../FireBase';
 import useInputs from '../../hooks/useInputs';
-import SendMessage from "../../shared/SendMessage";
+import SendMessage from '../../shared/SendMessage';
 
 const ContactComponent = () => {
     const [{ name, email, message }, onChange, reset] = useInputs({
@@ -22,14 +22,15 @@ const ContactComponent = () => {
                     name,
                     email,
                     message,
+                    isContact: false,
                     createAt: Date.now(),
                 });
                 reset();
-                window.alert('접수되었습니다.')
+                window.alert('접수되었습니다.');
                 // setIsSuccess(true);
                 setClickCount(0);
             } else {
-                window.alert('잠시후 다시 시도해주세요.')
+                window.alert('잠시후 다시 시도해주세요.');
                 // setIsSuccess(false);
                 setClickCount(clickCount + 1);
             }
@@ -37,7 +38,6 @@ const ContactComponent = () => {
             // setIsSuccess(false);
             setClickCount(clickCount + 1);
         }
-
     };
 
     // const handleConfirm = useCallback(() => {
@@ -62,7 +62,11 @@ const ContactComponent = () => {
                                 />
                                 <img src={personIcon} alt="userIcon" />
                             </div>
-                            {!name && clickCount > 0 && <span className="error">필수 입력 항목 입니다.</span>}
+                            {!name && clickCount > 0 && (
+                                <span className="error">
+                                    필수 입력 항목 입니다.
+                                </span>
+                            )}
                         </div>
                         <div>
                             <span className="label">E-MAIL</span>
@@ -76,7 +80,11 @@ const ContactComponent = () => {
                                 />
                                 <img src={mailIcon} alt="userIcon" />
                             </div>
-                            {!email && clickCount > 0 && <span className="error">반드시 Email을 입력해주세요.</span>}
+                            {!email && clickCount > 0 && (
+                                <span className="error">
+                                    반드시 Email을 입력해주세요.
+                                </span>
+                            )}
                         </div>
                     </div>
                     <div className="right">
@@ -87,11 +95,13 @@ const ContactComponent = () => {
                             value={message}
                             onChange={onChange}
                         />
-                        {!message && clickCount > 0 && <div className="error">필수 입력 항목입니다.</div>}
+                        {!message && clickCount > 0 && (
+                            <div className="error">필수 입력 항목입니다.</div>
+                        )}
                     </div>
                 </div>
-                <div style={{padding:'0 50px'}}>
-                <SendMessage handleSendMessage={onSubmitContactUs} />
+                <div style={{ padding: '0 50px' }}>
+                    <SendMessage handleSendMessage={onSubmitContactUs} />
                 </div>
                 {/*{isSuccess ? (*/}
                 {/*    <div>*/}
@@ -104,7 +114,7 @@ const ContactComponent = () => {
                 {/*        <button onClick={handleConfirm}>확인</button>*/}
                 {/*    </div>*/}
                 {/*)}
-  */}
+                 */}
             </div>
         </div>
     );
