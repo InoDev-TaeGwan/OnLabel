@@ -1,11 +1,11 @@
 import React from 'react';
 import AdminLayout from 'layout/Admin/AdminLayout';
-import TableComponent from 'components/Admin/TableCompnent';
+import ContactTableComponent from 'components/Admin/ContactTableComponent';
 
 const AdminPage = () => {
     return (
         <AdminLayout>
-            <TableComponent />
+            <ContactTableComponent />
         </AdminLayout>
     );
 };

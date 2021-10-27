@@ -1,0 +1,31 @@
+.AdminMainContainer {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.AdminTableContainer{
+    width:100%;
+}
+.AdminTableContainer table{
+    width: 100%;
+}
+
+.AdminTableContainer th,.AdminTableContainer td{
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+.AdminTableContainer tr .checkContact{
+    color: #3755F1;
+}
+.AdminTableContainer tr .noneContact{
+    color: red;
+}
+
+.AdminTableContainer .id{
+    width:80px
+}

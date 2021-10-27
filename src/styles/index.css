@@ -10,10 +10,14 @@
 @import url('Contact.css');
 @import url('Roadmap.css');
 @import url('common.css');
+@import url('Modal.css');
+
+/* admin */
 @import url('Admin/AdminLayout.css');
 @import url('Admin/SignInLayout.css');
 @import url('Admin/SignIn.css');
-@import url('Modal.css');
+@import url('Admin/AdminMain.css');
+
 
 
 
