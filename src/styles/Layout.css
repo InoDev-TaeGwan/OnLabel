@@ -11,6 +11,8 @@
     margin: 0 auto;
     margin-bottom: 200px;
     padding-left: 300px;
+    box-sizing: border-box;
+
 }
 
 
@@ -170,3 +172,15 @@
 .sideMenu .sideActive span{
     color:#3755F1;
 }
+
+
+/*@media screen and (max-width: 1799px) {*/
+
+/*}*/
+
+/*@media screen and (max-width: 1522px) {*/
+/*    .wrap{*/
+/*        max-width: 1300px;*/
+/*        padding-left: 0;*/
+/*    }*/
+/*}*/
