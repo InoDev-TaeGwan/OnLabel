@@ -36,10 +36,7 @@ const TableItem = memo(({item,index}) => {
             </tr>
             <tr>
                 <td colSpan="6">
-                    {!item.isContact &&<button onClick={onUpdate}>
-                        {/*<FontAwesomeIcon icon={faCheckCircle}  />*/}
-                        답변확인
-                    </button>}
+                    {!item.isContact &&<button onClick={onUpdate}>{/*<FontAwesomeIcon icon={faCheckCircle}  />*/}답변확인</button>}
                     {item.message}
                 </td>
             </tr>
