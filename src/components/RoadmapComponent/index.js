@@ -7,7 +7,7 @@ const RoadmapComponent = () => {
   return (
     <>
       <div className="roadmapContainer" id="roadMap">
-        <span className="title">ROADMAP</span>
+            <span className="title">ROADMAP</span>
           <img src={roadMap} alt="roadMapImg" width="100%" />
 
           {/*<div className="p_relative roadmap">*/}

@@ -43,3 +43,8 @@
     white-space: pre-wrap;
     word-break: break-all
 }
+@media screen and (max-width: 1550px){
+    .valueationContainer .itemBox .video{
+     width:570px;
+    }
+}

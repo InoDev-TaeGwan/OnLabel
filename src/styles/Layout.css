@@ -11,8 +11,7 @@
     margin: 0 auto;
     margin-bottom: 200px;
     padding-left: 300px;
-    box-sizing: border-box;
-
+    /*box-sizing: border-box;*/
 }
 
 
@@ -155,6 +154,8 @@
     border-radius: 26px;
 }
 
+
+
 .sideMenu .labelLogo{
     width: 125px;
     height: 27px;
@@ -173,7 +174,14 @@
     color:#3755F1;
 }
 
-
+@media screen and (max-width: 1550px){
+    .wrap{
+        box-sizing: border-box;
+    }
+    .sideMenu{
+        padding: 30px 20px;
+    }
+}
 /*@media screen and (max-width: 1799px) {*/
 
 /*}*/

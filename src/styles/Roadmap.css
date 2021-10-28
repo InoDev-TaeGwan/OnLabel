@@ -19,3 +19,8 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 1550px){
+    .roadmapContainer .title{
+        padding-left: 300px;
+    }
+}
