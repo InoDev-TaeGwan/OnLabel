@@ -31,6 +31,12 @@
     border-radius: 26px;
 }
 
+@media screen and (max-width: 1550px) {
+    .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile{
+        height: auto;
+    }
+}
+
 .teamAContainer .profileBox .profile .nameImage, .adviserContainer .profileBox .profile .nameImage{
     display: flex;
     flex-direction: row;

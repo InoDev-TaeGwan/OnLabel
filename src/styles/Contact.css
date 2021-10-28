@@ -66,6 +66,15 @@
     color:#fff;
     border: none;
     background: linear-gradient(90deg, #00C2E7 0%, #6300F9 100%);
-    box-shadow: 0px 5px 12px rgba(55, 85, 241, 0.2);
+    box-shadow: 0 5px 12px rgba(55, 85, 241, 0.2);
     border-radius: 26px;
+}
+@media screen and (max-width: 1550px) {
+    .contactContainer .formContainer .right .label{
+        margin-left: 20px;
+    }
+    .contactContainer .formContainer .right textarea{
+        width: 500px;
+        margin-left: 20px;
+    }
 }
