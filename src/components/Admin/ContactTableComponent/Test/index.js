@@ -13,6 +13,8 @@ import {
 import { dbService } from '../../../../FireBase';
 import Row from './Row';
 import TablePaginationAct from './TablePaginationAct';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 const TestComponent = () => {
     const [table, setTable] = useState([]);
@@ -129,15 +131,29 @@ const TestComponent = () => {
                             <TableCell align="center">이메일</TableCell>
                             <TableCell
                                 align="center"
+                                style={{ cursor: 'pointer' }}
                                 onClick={(e) => onSortClick(e, 'dateSort')}
                             >
-                                등록날짜
+                                <div className="Table-Header-Sort">
+                                    등록일
+                                    <div className="Table-Header-Icon">
+                                        <div className="triangle_up"></div>
+                                        <div className="triangle_down"></div>
+                                    </div>
+                                </div>
                             </TableCell>
                             <TableCell
                                 align="center"
+                                style={{ cursor: 'pointer' }}
                                 onClick={(e) => onSortClick(e, 'answerSort')}
                             >
-                                답변 확인 여부
+                                <div className="Table-Header-Sort">
+                                    답변 확인 여부
+                                    <div className="Table-Header-Icon">
+                                        <div className="triangle_up"></div>
+                                        <div className="triangle_down"></div>
+                                    </div>
+                                </div>
                             </TableCell>
                             <TableCell align="center">삭제</TableCell>
                         </TableRow>
