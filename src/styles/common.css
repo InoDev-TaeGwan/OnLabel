@@ -31,11 +31,7 @@
     border-radius: 26px;
 }
 
-@media screen and (max-width: 1550px) {
-    .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile{
-        height: auto;
-    }
-}
+
 
 .teamAContainer .profileBox .profile .nameImage, .adviserContainer .profileBox .profile .nameImage{
     display: flex;
@@ -231,4 +227,22 @@
     color: #fff;
     font-weight: 500;
     font-size: 18px;
+}
+
+@media screen and (max-width: 1550px) {
+    .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    /* 타블렛 가로 */
+}
+
+@media screen and (max-width:768px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .title{
+        font-size: 18px;
+        margin-bottom: 23px;
+    }
 }

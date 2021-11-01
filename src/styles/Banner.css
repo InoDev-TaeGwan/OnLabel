@@ -16,6 +16,20 @@
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1550px){
+
+}
+@media screen and (max-width:1200px) {
+    /* 타블렛 가로 */
+    .bannerContainer{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    /* 모바일 가로, 타블렛 세로 */
+
+}
+
 
 /*.bannerContainer button{*/
 /*    width: 240px;*/

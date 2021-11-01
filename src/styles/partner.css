@@ -49,3 +49,41 @@
     white-space: pre-wrap;
     word-break: break-all
 }
+
+@media screen and (max-width: 1550px){
+}
+
+@media screen and (max-width:1200px) {
+    /* 타블렛 가로 */
+}
+
+@media screen and (max-width:768px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .partnersContainer .itemBox{
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .partnersContainer .itemBox .contentBox .title{
+        line-height: inherit;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .partnersContainer .itemBox .contentBox .companyName{
+        line-height: inherit;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .partnersContainer .itemBox .contentBox .contentText{
+        line-height: inherit;
+        font-size: 12px;
+    }
+    .partnersContainer .itemBox .partnerImage .imageTitle{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .partnersContainer .itemBox .partnerImage{
+        margin: 0 auto;
+        width: 360px;
+    }
+}

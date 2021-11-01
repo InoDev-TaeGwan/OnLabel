@@ -47,7 +47,8 @@
     display: block;
     margin-bottom: 21px;
 
-}.mainVideoBannerContainer .subTitle, .mainBannerContainer .subTitle{
+}
+.mainVideoBannerContainer .subTitle, .mainBannerContainer .subTitle{
      font-weight: bold;
      font-size: 20px;
      text-align: center;
@@ -73,4 +74,28 @@
 }
 
 
+@media screen and (max-width: 1550px){}
 
+@media screen and (max-width:1200px) {
+    /* 타블렛 가로 */
+    .mainBannerContainer{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:768px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .mainBannerContainer{
+        padding-top: 120px;
+        height: 615px;
+        margin-bottom: 0;
+        background-position: center;
+
+    }
+    .mainVideoBannerContainer .title, .mainBannerContainer .title{
+        font-size: 22px;
+        line-height: inherit;
+    }
+    .mainVideoBannerContainer .subTitle, .mainBannerContainer .subTitle{
+        font-size: 14px;
+    }
+}
