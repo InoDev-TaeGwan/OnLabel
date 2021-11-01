@@ -81,3 +81,31 @@
         margin-left: 20px;
     }
 }
+
+@media screen and (max-width:1200px){
+
+}
+@media screen and (max-width:768px){
+    /*.contactContainer{*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+    .contactContainer .formContainer{
+        padding: 20px;
+    }
+    .contactContainer .formContainer .inputContainer{
+        display: block;
+        padding: 0;
+    }
+    .contactContainer .formContainer .left{
+        width: inherit;
+
+    }
+    .contactContainer .formContainer .right textarea{
+        width: 100%;
+        margin-left: 0;
+    }
+    .contactContainer .formContainer .right .label{
+        margin-left: 0;
+    }
+
+}

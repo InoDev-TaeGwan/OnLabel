@@ -48,3 +48,32 @@
      width:570px;
     }
 }
+
+@media screen and (max-width:1200px) {
+    /* 타블렛 가로 */
+}
+
+@media screen and (max-width:768px) {
+    /* 모바일 가로, 타블렛 세로 */
+    .title{
+        font-size: 18px;
+    }
+    .valueationContainer .itemBox{
+        display: block;
+    }
+    .valueationContainer .itemBox .contentBox .title{
+        font-size: 18px;
+        line-height: inherit;
+    }
+    .valueationContainer .itemBox .contentBox .subTitle{
+        font-size: 12px;
+        line-height: inherit;
+    }
+    .valueationContainer .itemBox .contentBox.reverse .title,.valueationContainer .itemBox .contentBox.reverse .subTitle{
+        text-align: center;
+    }
+    .valueationContainer .itemBox .video{
+        width: 360px;
+        margin: 0 auto;
+    }
+}

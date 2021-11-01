@@ -3,6 +3,7 @@ import React from 'react';
 import Items from './Items';
 
 const ValuationComponent = ({ video1, video2, video3 }) => {
+    const screenMobile = window.matchMedia("screen and (max-width: 768px)");
     return (
         <div className="valueationContainer wrap">
             <Items
@@ -15,6 +16,8 @@ const ValuationComponent = ({ video1, video2, video3 }) => {
             아직 명확하게 이루어지지 않고 있습니다.
         `}
                 video={video1}
+                reverse={screenMobile ? true : ''}
+
             />
             <Items
                 title="STEA는 원본파일을 증명합니다."
@@ -37,6 +40,7 @@ STEA가 삽입된 작품은
         STEA는 처음 발행한 아티스트를 증명해줍니다.
              `}
                 video={video3}
+                reverse={screenMobile ? true : ''}
             />
         </div>
     );
