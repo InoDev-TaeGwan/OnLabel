@@ -7,28 +7,57 @@
     border-radius: 20px;
 }
 
-.AdminTableContainer{
-    width:100%;
-}
-.AdminTableContainer table{
+.AdminTableContainer {
     width: 100%;
 }
 
-.AdminTableContainer th,.AdminTableContainer td{
+.AdminTableContainer table {
+    width: 100%;
+}
+
+.AdminTableContainer th, .AdminTableContainer td {
     padding: 15px 10px;
     box-sizing: border-box;
 }
 
-.AdminTableContainer tr .checkContact{
+.AdminTableContainer tr .checkContact {
     color: #3755F1;
 }
-.AdminTableContainer tr .noneContact{
+
+.AdminTableContainer tr .noneContact {
     color: red;
 }
 
-.AdminTableContainer .id{
-    width:80px
+.AdminTableContainer .id {
+    width: 80px
 }
-.AdminTableContainer .checkIcon svg path{
-    color:#008000;
+
+.AdminTableContainer .checkIcon svg path {
+    color: #008000;
+}
+.Scroll-wrap {
+    width: 100%;
+    overflow: scroll;
+    height: 280px;
+    padding-bottom: 20px;
+    background: #FBF3E4;
+    box-shadow: rgba(150, 100, 125, 0.2) 3px 3px 10px inset;
+}
+.Scroll-wrap .Contact-content {
+    font-weight: bold;
+    font-size: large;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 28px;
+    word-break: break-all;
+
+}
+
+.Button-wrap {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

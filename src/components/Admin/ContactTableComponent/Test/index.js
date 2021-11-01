@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     Table,
     TableBody,
@@ -7,19 +7,34 @@ import {
     TableHead,
     TableRow,
     Paper,
+    TableFooter,
+    TablePagination,
 } from '@mui/material';
 import { dbService } from '../../../../FireBase';
 import Row from './Row';
+import TablePaginationAct from './TablePaginationAct';
 
 const TestComponent = () => {
     const [table, setTable] = useState([]);
     const [isAsc, setIsAsc] = useState({ date: false, answer: false });
+    const [page, setPage] = useState(0);
+    const [rowsPerPage, setRowsPerPage] = useState(5);
+
+    const emptyRows =
+        page > 0 ? Math.max(0, (1 + page) * rowsPerPage - table.length) : 0;
+
+    const handleChangePage = (event, newPage) => {
+        setPage(newPage);
+    };
+
+    const handleChangeRowsPerPage = (event) => {
+        setRowsPerPage(parseInt(event.target.value, 10));
+        setPage(0);
+    };
 
     const convertTimestamp = (timestamp) => {
-        const now = new Date();
-        const postDay = new Date(timestamp);
-        const nowTime = now.getTime();
-        const postTime = postDay.getTime();
+        let now = new Date();
+        let postDay = new Date(timestamp);
         let minus;
         if (now.getFullYear() > postDay.getFullYear()) {
             minus = `${now.getFullYear() - postDay.getFullYear()}년 전`;
@@ -28,12 +43,20 @@ const TestComponent = () => {
                 minus = `${now.getMonth() - postDay.getMonth()}달 전`;
             } else {
                 minus = `${parseInt(
-                    `${(nowTime - postTime) / 1000 / 60 / 60 / 24}`
+                    `${
+                        (now.getTime() - postDay.getTime()) /
+                        1000 /
+                        60 /
+                        60 /
+                        24
+                    }`
                 )}일 전`;
             }
         } else if (now.getDate() > postDay.getDate()) {
             minus = `${now.getDate() - postDay.getDate()}일 전`;
         } else if (now.getDate() === postDay.getDate()) {
+            let nowTime = now.getTime();
+            let postTime = postDay.getTime();
             if (nowTime > postTime) {
                 let sec = parseInt(`${(nowTime - postTime) / 1000}`);
                 let day = parseInt(`${sec / 60 / 60 / 24}`);
@@ -46,7 +69,7 @@ const TestComponent = () => {
                     minus = `${hour}시간 전`;
                 } else if (min > 0) {
                     minus = `${min}분 전`;
-                } else if (sec > 0) {
+                } else if (sec >= 0) {
                     minus = `${sec}초 전`;
                 }
             }
@@ -59,17 +82,15 @@ const TestComponent = () => {
             .collection('contact')
             .orderBy('createAt', 'desc')
             .onSnapshot((snapshot) => {
-                const messageArray = snapshot.docs.map((doc) => ({
+                const messageArray = snapshot.docs.map((doc, index) => ({
+                    index: index + 1,
                     id: doc.id,
                     ...doc.data(),
                     compareNow: convertTimestamp(doc.data().createAt),
                 }));
-
                 setTable(messageArray);
-                console.log(messageArray);
             });
     }, []);
-
     const onSortClick = (e, name) => {
         e.preventDefault();
         // const { name } = event.target;
@@ -95,11 +116,6 @@ const TestComponent = () => {
             setIsAsc({ date: true, answer: !isAsc.answer });
         }
     };
-
-    // console.log(table)
-
-/*    const messageRef = useRef();
-    const selectedItem = false;*/
 
     return (
         <div className="AdminTableContainer">
@@ -127,10 +143,45 @@ const TestComponent = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {table.map((row) => (
-                            <Row key={row.name} row={row} />
+                        {(rowsPerPage > 0
+                            ? table.slice(
+                                  page * rowsPerPage,
+                                  page * rowsPerPage + rowsPerPage
+                              )
+                            : table
+                        ).map((row) => (
+                            <Row key={row.id} row={row} />
                         ))}
+                        {emptyRows > 0 && (
+                            <TableRow style={{ height: 53 * emptyRows }}>
+                                <TableCell colSpan={6} />
+                            </TableRow>
+                        )}
                     </TableBody>
+                    <TableFooter>
+                        <TableRow>
+                            <TablePagination
+                                align="right"
+                                rowsPerPageOptions={[
+                                    5, 10, 25,
+                                    // { label: 'All', value: -1 },
+                                ]}
+                                colSpan={7}
+                                count={table.length}
+                                rowsPerPage={rowsPerPage}
+                                page={page}
+                                SelectProps={{
+                                    inputProps: {
+                                        'aria-label': 'rows per page',
+                                    },
+                                    native: true,
+                                }}
+                                onPageChange={handleChangePage}
+                                onRowsPerPageChange={handleChangeRowsPerPage}
+                                ActionsComponent={TablePaginationAct}
+                            />
+                        </TableRow>
+                    </TableFooter>
                 </Table>
             </TableContainer>
         </div>

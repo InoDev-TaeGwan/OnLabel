@@ -16,12 +16,14 @@ const ContactComponent = () => {
 
     const onSubmitContactUs = async (event) => {
         event.preventDefault();
+
         try {
             if (name && message && email) {
+                const whiteSpaceStr = message.replace(/(\n|\r\n)/g, '<br>');
                 await dbService.collection('contact').add({
                     name,
                     email,
-                    message,
+                    message: whiteSpaceStr,
                     isContact: false,
                     createAt: Date.now(),
                 });
@@ -30,12 +32,11 @@ const ContactComponent = () => {
                 // setIsSuccess(true);
                 setClickCount(0);
             } else {
-                window.alert('잠시후 다시 시도해주세요.');
-                // setIsSuccess(false);
                 setClickCount(clickCount + 1);
             }
         } catch (error) {
             // setIsSuccess(false);
+            window.alert('잠시후 다시 시도해주세요.');
             setClickCount(clickCount + 1);
         }
     };
