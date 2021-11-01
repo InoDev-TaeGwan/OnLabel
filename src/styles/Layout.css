@@ -14,7 +14,6 @@
     /*box-sizing: border-box;*/
 }
 
-
 .footerContainer{
     background: rgba(55, 142, 241, 0.06);
     padding: 50px 0;
@@ -27,9 +26,9 @@
     justify-content: space-between;
 }
 .footerContainer .footerContentBox .whitePaper .labelLogo{
-    width: 125px;
-    height: 27px;
-    margin-bottom: 35px;
+    width: 180px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
 .footerContainer .footerContentBox .whitePaper .whitePaperDown{
@@ -157,8 +156,8 @@
 
 
 .sideMenu .labelLogo{
-    width: 125px;
-    height: 27px;
+    width: 180px;
+    height: 40px;
     margin-bottom: 35px;
 }
 .sideMenu span{
@@ -182,13 +181,13 @@
         padding: 30px 20px;
     }
 }
-/*@media screen and (max-width: 1799px) {*/
+@media screen and (max-width:1199px) {
+    /* 타블렛 가로 */
+}
+@media screen and (max-width:899px) {
+    /* 모바일 가로, 타블렛 세로 */
+}
 
-/*}*/
-
-/*@media screen and (max-width: 1522px) {*/
-/*    .wrap{*/
-/*        max-width: 1300px;*/
-/*        padding-left: 0;*/
-/*    }*/
-/*}*/
+@media screen and (max-width:599px) {
+    /* 모바일 세로 */
+}

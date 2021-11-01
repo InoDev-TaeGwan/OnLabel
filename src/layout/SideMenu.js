@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from "react-scroll";
 
-import LabelLogo from 'assets/images/LabelLogo.png';
+// import Logo from 'assets/images/Logo.png';
+import Logo from 'assets/images/Logo2.png';
 import CreateNFT from "shared/CreateNFT";
 
 
@@ -9,7 +10,7 @@ const SideMenu = () => {
     return (
         <div className="sideMenu">
             <div className="labelLogo">
-                <img src={LabelLogo} alt="LabelLogo"  />
+                <img src={Logo} alt="LabelLogo" width="100%"/>
             </div>
             <Link activeClass="sideActive" to="main" spy={true} smooth={true}>
                 <span>About</span>
