@@ -1,6 +1,7 @@
 import React from 'react';
 
-import LabelLogo from 'assets/images/LabelLogo.png';
+// import Logo from 'assets/images/Logo.png';
+import Logo from 'assets/images/Logo2.png';
 import arrow from 'assets/icons/arrow(blue).svg';
 
 const Footer = ({ whitePaper }) => {
@@ -9,7 +10,7 @@ const Footer = ({ whitePaper }) => {
             <div className="footerContentBox">
                 <div className="whitePaper">
                     <div className="labelLogo">
-                        <img src={LabelLogo} alt="LabelLogo" />
+                        <img src={Logo} alt="LabelLogo" width="100%" />
                     </div>
                     <button className="whitePaperDown">
                         <a href={whitePaper} target="blank">
@@ -21,12 +22,12 @@ const Footer = ({ whitePaper }) => {
                 <div className="privacyPolicy">
                     <span className="footerTitle">PRIVACY POLICY</span>
                     <span className="content">
-                        © label. All rights reserved.
+                        © STEA. All rights reserved.
                     </span>
                 </div>
                 <div className="contactUs">
                     <span className="footerTitle">CONTACT US</span>
-                    <span className="content">ceo@waterlabel.io</span>
+                    <span className="content">ceo@stea.tech</span>
                     {/*<span className="content">*/}
                     {/*    singapore singapore singapore singapore*/}
                     {/*</span>*/}

@@ -15,7 +15,7 @@ const MainBannerComponent = () => {
               강화되어야 합니다.
             </span>
             <span className="subTitle">
-              LABEL을 사용하여 당신의 디지털 자산을 보호하세요.
+              STEA를 사용하여 당신의 디지털 자산을 보호하세요.
             </span>
             <button className="CreateNFTActive_shadow" onClick={handleNFT} style={{display:'block', margin:'0 auto'}}>
               <div className="subBackground">

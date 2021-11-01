@@ -17,12 +17,12 @@ const ValuationComponent = ({ video1, video2, video3 }) => {
                 video={video1}
             />
             <Items
-                title="Waterlabel은 원본파일을 증명합니다."
+                title="STEA는 원본파일을 증명합니다."
                 subTitle={`
 저희는 마침내 원작자의 작품을 해치지 않고
-인간의 눈에 보이지 않는 LABEL을
+인간의 눈에 보이지 않는 STEA를
 디지털 파일에 삽입하는 것을 성공했습니다.
-LABEL이 삽입된 작품은
+STEA가 삽입된 작품은
 그 자체로 정보를 확인할 수 있습니다.
 `}
                 video={video2}
@@ -31,10 +31,10 @@ LABEL이 삽입된 작품은
             <Items
                 title="진짜 대체 불가능한 자산으로"
                 subTitle={`
-        작품 그 자체에 삽입된 LABEL은
+        작품 그 자체에 삽입된 STEA는
         빈번히 일어나는 작품에 대한 도난을 완벽히 차단합니다.
         누군가 NFT로 등록된 사진 파일을 자신의 주소에 발행해도
-        LABEL은 처음 발행한 아티스트를 증명해줍니다.
+        STEA는 처음 발행한 아티스트를 증명해줍니다.
              `}
                 video={video3}
             />

@@ -105,7 +105,7 @@ KB,Metlife 클라우드 아키텍트 수행`,
         position: 'DEVELOPER',
         image: getFileUrl(profileName[7]),
         profileHistory: `블록체인,Wallet,Exchange 등 개발이력 多
-現 Label Developer
+現 STEA Developer
 前 분산처리시스템 연구실 연구원
 前 한이음 프로젝트 참여`,
     },
@@ -128,7 +128,7 @@ Flutter 앱 개발`,
         profileHistory: `한양대학교 디자인과
 前 인디텍스 자라 근무
 前 이랜드 근무
-現 Label Designer`,
+現 STEA Designer`,
     },
 
     {
@@ -176,7 +176,7 @@ Korda.us 중남미
         profileHistory: `성균관대 중문학과
 중국 SONY전자 및 외주업체 근무
 중국 텐센트엑셀레이터
-㈜ Label 중국사업부 이사`,
+㈜ STEA 중국사업부 이사`,
     },
 ];
 

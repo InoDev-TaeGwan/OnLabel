@@ -87,8 +87,8 @@ const TestComponent = () => {
 
     // console.log(table)
 
-    const messageRef = useRef();
-    const selectedItem = false;
+/*    const messageRef = useRef();
+    const selectedItem = false;*/
 
     return (
         <div className="AdminTableContainer">
