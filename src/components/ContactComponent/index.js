@@ -101,7 +101,7 @@ const ContactComponent = () => {
                         )}
                     </div>
                 </div>
-                <div style={{ padding: '0 50px' }}>
+                <div >
                     <SendMessage handleSendMessage={onSubmitContactUs} />
                 </div>
                 {/*{isSuccess ? (*/}
