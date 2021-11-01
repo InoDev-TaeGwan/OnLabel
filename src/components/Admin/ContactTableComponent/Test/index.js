@@ -1,30 +1,41 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow,Paper} from "@mui/material";
-import {dbService} from "../../../../FireBase";
-import Row from "./Row";
+import React, { useEffect, useRef, useState } from 'react';
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Paper,
+} from '@mui/material';
+import { dbService } from '../../../../FireBase';
+import Row from './Row';
 
 const TestComponent = () => {
-
     const [table, setTable] = useState([]);
     const [isAsc, setIsAsc] = useState({ date: false, answer: false });
 
     const convertTimestamp = (timestamp) => {
         const now = new Date();
         const postDay = new Date(timestamp);
+        const nowTime = now.getTime();
+        const postTime = postDay.getTime();
         let minus;
         if (now.getFullYear() > postDay.getFullYear()) {
             minus = `${now.getFullYear() - postDay.getFullYear()}년 전`;
         } else if (now.getMonth() > postDay.getMonth()) {
-            minus = `${now.getMonth() - postDay.getMonth()}달 전`;
+            if (now.getDate() - postDay.getDate() > 30) {
+                minus = `${now.getMonth() - postDay.getMonth()}달 전`;
+            } else {
+                minus = `${parseInt(
+                    `${(nowTime - postTime) / 1000 / 60 / 60 / 24}`
+                )}일 전`;
+            }
         } else if (now.getDate() > postDay.getDate()) {
             minus = `${now.getDate() - postDay.getDate()}일 전`;
         } else if (now.getDate() === postDay.getDate()) {
-            const nowTime = now.getTime();
-            const postTime = postDay.getTime();
             if (nowTime > postTime) {
-                let sec = parseInt(
-                    `${(now.getTime() - postDay.getTime()) / 1000}`
-                );
+                let sec = parseInt(`${(nowTime - postTime) / 1000}`);
                 let day = parseInt(`${sec / 60 / 60 / 24}`);
                 sec = sec - day * 60 * 60 * 24;
                 let hour = parseInt(`${sec / 60 / 60}`);
@@ -55,7 +66,7 @@ const TestComponent = () => {
                 }));
 
                 setTable(messageArray);
-                console.log(messageArray)
+                console.log(messageArray);
             });
     }, []);
 
@@ -100,8 +111,18 @@ const TestComponent = () => {
                             <TableCell align="center">NO</TableCell>
                             <TableCell align="center">이름</TableCell>
                             <TableCell align="center">이메일</TableCell>
-                            <TableCell align="center" onClick={(e)=>onSortClick(e,'dateSort')}>등록날짜</TableCell>
-                            <TableCell align="center" onClick={(e)=>onSortClick(e,'answerSort')}>답변 확인 여부</TableCell>
+                            <TableCell
+                                align="center"
+                                onClick={(e) => onSortClick(e, 'dateSort')}
+                            >
+                                등록날짜
+                            </TableCell>
+                            <TableCell
+                                align="center"
+                                onClick={(e) => onSortClick(e, 'answerSort')}
+                            >
+                                답변 확인 여부
+                            </TableCell>
                             <TableCell align="center">삭제</TableCell>
                         </TableRow>
                     </TableHead>
