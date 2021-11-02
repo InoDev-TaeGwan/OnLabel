@@ -9,9 +9,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import CheckIcon from '@mui/icons-material/Check';
-// import Typography from '@mui/material/Typography';
-// import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-// import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Row = ({ row }) => {
     const [open, setOpen] = useState(false);

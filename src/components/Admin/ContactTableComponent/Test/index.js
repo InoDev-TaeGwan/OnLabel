@@ -13,12 +13,11 @@ import {
 import { dbService } from '../../../../FireBase';
 import Row from './Row';
 import TablePaginationAct from './TablePaginationAct';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 
 const TestComponent = () => {
     const [table, setTable] = useState([]);
     const [isAsc, setIsAsc] = useState({ date: false, answer: false });
+    const [isClick, setIsClick] = useState({ date: false, answer: false });
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(5);
 
@@ -93,6 +92,7 @@ const TestComponent = () => {
                 setTable(messageArray);
             });
     }, []);
+
     const onSortClick = (e, name) => {
         e.preventDefault();
         // const { name } = event.target;
@@ -106,6 +106,7 @@ const TestComponent = () => {
             });
             setTable(table);
             setIsAsc({ answer: false, date: !isAsc.date });
+            setIsClick({ answer: false, date: true });
         } else if (name === 'answerSort') {
             table.sort((a, b) => {
                 if (isAsc.answer) {
@@ -116,6 +117,7 @@ const TestComponent = () => {
             });
             setTable(table);
             setIsAsc({ date: true, answer: !isAsc.answer });
+            setIsClick({ answer: true, date: false });
         }
     };
 
@@ -137,8 +139,22 @@ const TestComponent = () => {
                                 <div className="Table-Header-Sort">
                                     등록일
                                     <div className="Table-Header-Icon">
-                                        <div className="triangle_up"></div>
-                                        <div className="triangle_down"></div>
+                                        {!isClick.date ? (
+                                            <>
+                                                <div className="triangle-up-gray"></div>
+                                                <div className="triangle-down-gray"></div>
+                                            </>
+                                        ) : isAsc.date ? (
+                                            <>
+                                                <div className="triangle-up"></div>
+                                                <div className="triangle-down-gray"></div>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <div className="triangle-up-gray"></div>
+                                                <div className="triangle-down"></div>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </TableCell>
@@ -150,8 +166,22 @@ const TestComponent = () => {
                                 <div className="Table-Header-Sort">
                                     답변 확인 여부
                                     <div className="Table-Header-Icon">
-                                        <div className="triangle_up"></div>
-                                        <div className="triangle_down"></div>
+                                        {!isClick.answer ? (
+                                            <>
+                                                <div className="triangle-up-gray"></div>
+                                                <div className="triangle-down-gray"></div>
+                                            </>
+                                        ) : isAsc.answer ? (
+                                            <>
+                                                <div className="triangle-up"></div>
+                                                <div className="triangle-down-gray"></div>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <div className="triangle-up-gray"></div>
+                                                <div className="triangle-down"></div>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </TableCell>
