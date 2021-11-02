@@ -18,7 +18,8 @@
     "react-scroll": "^1.8.4",
     "react-slick": "^0.28.1",
     "validator": "^13.6.0",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "xlsx": "^0.17.3"
   },
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",

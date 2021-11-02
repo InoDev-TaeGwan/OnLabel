@@ -13,6 +13,7 @@ import {
 import { dbService } from '../../../../FireBase';
 import Row from './Row';
 import TablePaginationAct from './TablePaginationAct';
+import XLSX from 'xlsx';
 
 const TestComponent = () => {
     const [table, setTable] = useState([]);
@@ -31,6 +32,13 @@ const TestComponent = () => {
     const handleChangeRowsPerPage = (event) => {
         setRowsPerPage(parseInt(event.target.value, 10));
         setPage(0);
+    };
+
+    const onClickDownloadXlsx = () => {
+        const writeStream = XLSX.utils.json_to_sheet(table);
+        const writeBuffer = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(writeBuffer, writeStream);
+        XLSX.writeFile(writeBuffer, 'example.xlsx');
     };
 
     const convertTimestamp = (timestamp) => {
@@ -123,6 +131,7 @@ const TestComponent = () => {
 
     return (
         <div className="AdminTableContainer">
+            <button onClick={onClickDownloadXlsx}> 다운로드</button>
             <TableContainer component={Paper}>
                 <Table aria-label="collapsible table">
                     <TableHead>
