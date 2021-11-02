@@ -10,8 +10,7 @@
 .AdminTableContainer {
     width: 100%;
 }
-
-.AdminTableContainer table {
+ .AdminTableContainer table {
     width: 100%;
 }
 
@@ -77,7 +76,7 @@
     padding-left: 5px;
 }
 
-.triangle_down {
+.triangle-down {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -89,7 +88,7 @@
     margin-top: 2px;
 }
 
-.triangle_up {
+.triangle-up {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -99,3 +98,27 @@
     line-height: 0;
     float: left;
 }
+
+.triangle-down-gray {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #D5D5D5;
+    font-size: 0;
+    line-height: 0;
+    float: left;
+    margin-top: 2px;
+}
+
+.triangle-up-gray {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid #D5D5D5;
+    font-size: 0;
+    line-height: 0;
+    float: left;
+}
+
