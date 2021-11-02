@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
-import ProfileHistory from './ProfileHistory';
+// import ProfileHistory from './ProfileHistory';
 
 const Profile = memo(({ name, position, image, profileHistory, mobile }) => {
     const [isFlipped, setIsFlipped] = useState(false);
