@@ -1,17 +1,23 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 // import RoadmapTest from "./RoadmapTest";
 
 import roadMap from 'assets/images/roadMap.png';
-// import roadMapMobile from 'assets/images/roadMap_mobile.png';
+import roadMapMobile from 'assets/images/roadMap_mobile.png';
 
 const RoadmapComponent = () => {
-    // // const screenMobile = window.matchMedia("screen and (max-width: 768px)");
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(()=>{
+        const screenMobile = window.matchMedia("screen and (max-width: 768px)");
+        setIsMobile(screenMobile.matches);
+    },[])
+
     return (
     <>
       <div className="roadmapContainer" id="roadMap">
             <span className="title">ROADMAP</span>
-          {/*{isMobile ? <img src={roadMapMobile} alt="roadMapImg" width="100%" /> : <img src={roadMap} alt="roadMapImg" width="100%" />}*/}
-           <img src={roadMap} alt="roadMapImg" width="100%" />
+          {isMobile ? <img src={roadMapMobile} alt="roadMapImg" width="100%" /> : <img src={roadMap} alt="roadMapImg" width="100%" />}
+           {/*<img src={roadMap} alt="roadMapImg" width="100%" />*/}
 
 
           {/*<div className="p_relative roadmap">*/}

@@ -1,15 +1,15 @@
 /* position */
-.p_relative{
+.p_relative {
     position: relative;
 }
 
 /* margin */
-.mb_50{
+.mb_50 {
     margin-bottom: 50px;
 }
 
 /* title */
-.title{
+.title {
     display: block;
     font-weight: bold;
     font-size: 38px;
@@ -17,12 +17,13 @@
 }
 
 /* profileItem */
-.teamAContainer .profileBox{
+.teamAContainer .profileBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
-.teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile{
+
+.teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile {
     height: 288px;
     padding: 30px;
     box-sizing: border-box;
@@ -32,57 +33,130 @@
 }
 
 
-
-.teamAContainer .profileBox .profile .nameImage, .adviserContainer .profileBox .profile .nameImage{
+.teamAContainer .profileBox .profile .nameImage, .adviserContainer .profileBox .profile .nameImage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.teamAContainer .profileBox .profile .nameImage .name, .adviserContainer .profileBox .profile .nameImage .name{
+.teamAContainer .profileBox .profile .nameImage .name, .adviserContainer .profileBox .profile .nameImage .name {
     font-weight: bold;
     font-size: 20px;
     margin-right: 10px;
     display: inline-block;
 }
 
-.teamAContainer .profileBox .profile .nameImage .profileImage, .adviserContainer .profileBox .profile .nameImage .profileImage{
+.teamAContainer .profileBox .profile .nameImage .profileImage, .adviserContainer .profileBox .profile .nameImage .profileImage {
     width: 80px;
     height: 80px;
     /*border: 2px solid rgba(255, 255, 255, 0.3);*/
-    border: 2px solid rgba(90,90,90, 0.3);
+    border: 2px solid rgba(90, 90, 90, 0.3);
     border-radius: 50%;
     overflow: hidden;
-
 }
-.teamAContainer .profileBox .profile .nameImage .profileImage img, .adviserContainer .profileBox .profile .nameImage .profileImage img{
+
+.teamAContainer .profileBox .profile .nameImage .profileImage img, .adviserContainer .profileBox .profile .nameImage .profileImage img {
     background-color: #C9C9C9;
 }
 
-.teamAContainer .profileBox .profile .nameImage .position, .adviserContainer .profileBox .profile .nameImage .position{
+.teamAContainer .profileBox .profile .nameImage .position, .adviserContainer .profileBox .profile .nameImage .position {
     display: inline-block;
     font-weight: bold;
     font-size: 15px;
     color: #3755F1;
 }
 
-.teamAContainer .profileBox .profile .profileHistory, .adviserContainer .profileBox .profile .profileHistory{
+.teamAContainer .profileBox .profile .profileHistory, .adviserContainer .profileBox .profile .profileHistory {
     font-size: 15px;
     line-height: 24px;
     white-space: pre-wrap;
     word-break: break-all;
 }
 
+/* profileItem 모바일 */
+.teamAContainer .profileBox_mobile .profile_group, .adviserContainer .profileBox_mobile .profile_group {
+    width: 100%;
+    /*height: 328px;*/
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile, .adviserContainer .profileBox_mobile .profile_group .profile_mobile {
+    background: #FFFFFF;
+    /* picture shadow */
+    box-shadow: 0 8px 30px rgba(55, 142, 241, 0.16);
+    border-radius: 26px;
+
+    padding:20px;
+    box-sizing: border-box;
+
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage {
+    width: 100%;
+    height: 84px;
+
+    background-color: #fff;
+
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage {
+    width: 80px;
+    height: 80px;
+    /*border: 2px solid rgba(255, 255, 255, 0.3);*/
+    border: 2px solid rgba(90, 90, 90, 0.3);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .namePosition, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .namePosition {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage img, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage img {
+    background-color: #C9C9C9;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .name, .profileBox_mobile .profile_group .profile_mobile .nameImage .name {
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .position, .profileBox_mobile .profile_group .profile_mobile .nameImage .position {
+    font-weight: bold;
+    font-size: 15px;
+    color: #3755F1;
+    display: block;
+}
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile .profileHistory, .profileBox_mobile .profile_group .profile_mobile .profileHistory {
+    width:100%;
+    min-height: 82px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+
+}
+
 /* Create NFT button */
-.CreateNFT{
+.CreateNFT {
     /*display: block;*/
     width: 240px;
     height: 50px;
     border: none;
     /*margin: 0 auto;*/
     cursor: pointer;
-    background:linear-gradient(90deg,rgba(0, 194, 231, 1),rgba(99, 0, 249, 1));
+    background: linear-gradient(90deg, rgba(0, 194, 231, 1), rgba(99, 0, 249, 1));
     filter: drop-shadow(0px 5px 12px rgba(55, 85, 241, 0.2));
     border-radius: 26px;
     color: #fff;
@@ -90,11 +164,13 @@
     font-size: 18px;
     box-shadow: 0 5px 12px rgba(55, 85, 241, 0.2);
 }
-.CreateNFTcontainer{
+
+.CreateNFTcontainer {
     width: 240px;
     height: 55px;
     margin: 0 auto;
 }
+
 /*.CreateNFT_shadow{*/
 /*    width: 240px;*/
 /*    height: 51px;*/
@@ -108,7 +184,7 @@
 /*    border: none;*/
 /*    margin: 0 auto;*/
 /*}*/
-.CreateNFT_shadow{
+.CreateNFT_shadow {
     display: block;
     background-color: inherit;
     background: linear-gradient(90deg, #00C2E7 0%, #6300F9 100%);
@@ -124,14 +200,15 @@
     font-size: 18px;
 
 }
-.CreateNFTActive{
+
+.CreateNFTActive {
     /*display: block;*/
     width: 240px;
     height: 50px;
     border: none;
     /*margin: 0 auto;*/
     cursor: pointer;
-    background:linear-gradient(90deg,rgba(0, 194, 231, 1),rgba(99, 0, 249, 1));
+    background: linear-gradient(90deg, rgba(0, 194, 231, 1), rgba(99, 0, 249, 1));
     filter: drop-shadow(0px 5px 12px rgba(55, 85, 241, 0.2));
     border-radius: 26px;
     color: #3755F1;
@@ -139,26 +216,28 @@
     font-size: 18px;
     position: relative;
 }
-.CreateNFTActive .subBackground{
+
+.CreateNFTActive .subBackground {
     width: 236px;
     height: 46px;
     line-height: 46px;
     background-color: #fff;
-    color:#3755F1;
+    color: #3755F1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 26px;
 }
-.CreateNFTActive_shadow{
+
+.CreateNFTActive_shadow {
     /*display: block;*/
     width: 240px;
     height: 50px;
     border: none;
     /*margin: 0 auto;*/
     cursor: pointer;
-    background:linear-gradient(90deg,rgba(0, 194, 231, 1),rgba(99, 0, 249, 1));
+    background: linear-gradient(90deg, rgba(0, 194, 231, 1), rgba(99, 0, 249, 1));
     filter: drop-shadow(0px 5px 12px rgba(55, 85, 241, 0.2));
     border-radius: 26px;
     color: #3755F1;
@@ -166,20 +245,22 @@
     font-size: 18px;
     position: relative;
 }
-.CreateNFTActive_shadow .subBackground{
+
+.CreateNFTActive_shadow .subBackground {
     width: 236px;
     height: 46px;
     line-height: 46px;
     background-color: #fff;
-    color:#3755F1;
+    color: #3755F1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 26px;
 }
-.CreateNFTActive_shadow .subBackground span{
-    background: linear-gradient(to left, rgba(99, 0, 249, 1),rgba(0, 194, 231, 1));
+
+.CreateNFTActive_shadow .subBackground span {
+    background: linear-gradient(to left, rgba(99, 0, 249, 1), rgba(0, 194, 231, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
@@ -187,14 +268,14 @@
 }
 
 /* SendMessage */
-.SendMessage{
+.SendMessage {
     /*display: block;*/
     width: 240px;
     height: 50px;
     border: none;
     /*margin: 0 auto;*/
     cursor: pointer;
-    background:linear-gradient(90deg,rgba(0, 194, 231, 1),rgba(99, 0, 249, 1));
+    background: linear-gradient(90deg, rgba(0, 194, 231, 1), rgba(99, 0, 249, 1));
     filter: drop-shadow(0px 5px 12px rgba(55, 85, 241, 0.2));
     border-radius: 26px;
     color: #3755F1;
@@ -202,26 +283,28 @@
     font-size: 18px;
     position: relative;
 }
-.SendMessage .subBackground{
+
+.SendMessage .subBackground {
     width: 236px;
     height: 46px;
     line-height: 46px;
     background-color: #fff;
-    color:#3755F1;
+    color: #3755F1;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 26px;
 }
-.SendMessageActive{
+
+.SendMessageActive {
     /*display: block;*/
     width: 240px;
     height: 50px;
     border: none;
     /*margin: 0 auto;*/
     cursor: pointer;
-    background:linear-gradient(90deg,rgba(0, 194, 231, 1),rgba(99, 0, 249, 1));
+    background: linear-gradient(90deg, rgba(0, 194, 231, 1), rgba(99, 0, 249, 1));
     filter: drop-shadow(0px 5px 12px rgba(55, 85, 241, 0.2));
     border-radius: 26px;
     color: #fff;
@@ -230,18 +313,18 @@
 }
 
 @media screen and (max-width: 1550px) {
-    .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile{
+    .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile {
         height: auto;
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     /* 타블렛 가로 */
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     /* 모바일 가로, 타블렛 세로 */
-    .title{
+    .title {
         font-size: 18px;
         margin-bottom: 23px;
     }

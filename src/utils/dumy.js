@@ -32,22 +32,26 @@ export const partnerData = [
         name: '김 성 수',
         position: 'CEO',
         image: getFileUrl(profileName[0]),
-        profileHistory: `카이스트 기계공학, 산업 및 시스템 공학 졸업
-중소기업진흥공단 청년창업 사관학교 3기 졸업
-2015' 카이스트 기업가정신 총장상 대상
-前 카이스트 사회기술혁신연구소 (KAIST RISTI) 팀장
-前 카이스트 휴머노이드 레인보우로보틱스 팀장
-前 레인보우로보틱스 코스닥 IPO 상장 기여 `,
+        profileHistory: [
+            '카이스트 기계공학, 산업 및 시스템 공학 졸업',
+            '중소기업진흥공단 청년창업 사관학교 3기 졸업',
+            "'2015' 카이스트 기업가정신 총장상 대상",
+            '前 카이스트 사회기술혁신연구소 (KAIST RISTI) 팀장',
+            '前 카이스트 휴머노이드 레인보우로보틱스 팀장',
+            '前 레인보우로보틱스 코스닥 IPO 상장 기여',
+        ],
     },
     {
         id: 2,
         name: '김 건 수',
         position: 'IT PM',
         image: getFileUrl(profileName[1]),
-        profileHistory: `IT Firm – Samsung SDS
-Intranet developer & DBA Mar 1997 – May 1999
-IT Firm – IBM Korea SWG AVP Team
-Informix SE & Domino SE & AVP service PM Jun 1999 – Sep 2019`,
+        profileHistory: [
+            'IT Firm – Samsung SDS',
+            'Intranet developer & DBA Mar 1997 – May 1999',
+            'IT Firm – IBM Korea SWG AVP Team',
+            'Informix SE & Domino SE & AVP service PM Jun 1999 – Sep 2019',
+        ],
     },
 
     {
@@ -55,69 +59,80 @@ Informix SE & Domino SE & AVP service PM Jun 1999 – Sep 2019`,
         name: '이 해 경',
         position: 'CSO',
         image: getFileUrl(profileName[2]),
-        profileHistory: `IBM 애자일
-하나은행, NS, 매트라이프, KB금융 수행`,
+        profileHistory: ['IBM 애자일', '하나은행, NS, 매트라이프, KB금융 수행'],
     },
     {
         id: 4,
         name: '윤 대 근',
         position: '사업고문',
         image: getFileUrl(profileName[3]),
-        profileHistory: `前 IBM KOREA 상무
-NH투자증권 마이데이터 구축
-KB국민은행 AI ChatBot 구축
-POSCO 빅데이터 플랫폼 구축`,
+        profileHistory: [
+            '前 IBM KOREA 상무',
+            'NH투자증권 마이데이터 구축',
+            'KB국민은행 AI ChatBot 구축',
+            'POSCO 빅데이터 플랫폼 구축',
+        ],
     },
     {
         id: 5,
         name: '서 준 영',
         position: 'DEVELOPER',
         image: getFileUrl(profileName[4]),
-        profileHistory: `現 한국IBM 부장
-교보,농협,신한 BPM 컨설턴트 수행
-KB,Metlife 클라우드 아키텍트 수행`,
+        profileHistory: [
+            '現 한국IBM 부장',
+            '교보,농협,신한 BPM 컨설턴트 수행',
+            'KB,Metlife 클라우드 아키텍트 수행',
+        ],
     },
     {
         id: 6,
         name: '김 유 진',
         position: 'CSO',
         image: getFileUrl(profileName[5]),
-        profileHistory: `일본 오카야마 대학원 박사 수료
-포스코, 삼성SDS, SKT, LG Uplus 프로젝트 수행
-現 LG CNS 데이터 사이언티스트
-前 한국아이비엠 데이터 사이언티스트`,
+        profileHistory: [
+            '일본 오카야마 대학원 박사 수료',
+            '포스코, 삼성SDS, SKT, LG Uplus 프로젝트 수행',
+            '現 LG CNS 데이터 사이언티스트',
+            '前 한국아이비엠 데이터 사이언티스트',
+        ],
     },
     {
         id: 7,
         name: '김 수 본',
         position: 'DEVELOPER',
         image: getFileUrl(profileName[6]),
-        profileHistory: `카이스트 기계공학 학/석사 졸업
-前 지에프테크놀로지 수석연구원
-수술로봇용 햅틱 피드백 연구개발
-경찰/군사훈련용 명중분석시스템, 수술로봇용
-햅틱 피드백연구개발
-유통관리 및 보안솔루션용 워터 마킹 기술 연구개발`,
+        profileHistory: [
+            '카이스트 기계공학 학/석사 졸업',
+            '前 지에프테크놀로지 수석연구원',
+            '수술로봇용 햅틱 피드백 연구개발',
+            '경찰/군사훈련용 명중분석시스템, 수술로봇용',
+            '햅틱 피드백연구개발',
+            '유통관리 및 보안솔루션용 워터 마킹 기술 연구개발',
+        ],
     },
     {
         id: 8,
         name: '이 규 영',
         position: 'DEVELOPER',
         image: getFileUrl(profileName[7]),
-        profileHistory: `블록체인,Wallet,Exchange 등 개발이력 多
-現 STEA Developer
-前 분산처리시스템 연구실 연구원
-前 한이음 프로젝트 참여`,
+        profileHistory: [
+            '블록체인,Wallet,Exchange 등 개발이력 多',
+            '現 STEA Developer',
+            '前 분산처리시스템 연구실 연구원',
+            '前 한이음 프로젝트 참여',
+        ],
     },
     {
         id: 9,
         name: '김 재 웅',
         position: 'DEVELOPER',
         image: getFileUrl(profileName[8]),
-        profileHistory: `서울대학교 컴퓨터공학과
-Python bot 다수 개발
-Unity 3D, C# 게임 개발
-Flutter 앱 개발`,
+        profileHistory: [
+            '서울대학교 컴퓨터공학과',
+            'Python bot 다수 개발',
+            'Unity 3D, C# 게임 개발',
+            'Flutter 앱 개발',
+        ],
     },
 
     {
@@ -125,10 +140,12 @@ Flutter 앱 개발`,
         name: '박 소 희',
         position: 'DESIGNER',
         image: getFileUrl(profileName[9]),
-        profileHistory: `한양대학교 디자인과
-前 인디텍스 자라 근무
-前 이랜드 근무
-現 STEA Designer`,
+        profileHistory: [
+            '한양대학교 디자인과',
+            '前 인디텍스 자라 근무',
+            '前 이랜드 근무',
+            '現 STEA Designer',
+        ],
     },
 
     {
@@ -146,18 +163,22 @@ DNI Company(베트남, 한국) 디자이너`,
         name: '이 성 욱',
         position: 'CSO',
         image: getFileUrl(profileName[11]),
-        profileHistory: `블록체인 컨설턴트
-Big Stone CEO
-Director of the Btrade Exchange`,
+        profileHistory: [
+            '블록체인 컨설턴트',
+            'Big Stone CEO',
+            'Director of the Btrade Exchange',
+        ],
     },
     {
         id: 13,
         name: 'JOSE',
         position: 'ENGLISH MANAGER',
         image: getFileUrl(profileName[12]),
-        profileHistory: `성균관대 전자공학석사
-Korda.us 중남미
-정보통신 기술 컨설팅`,
+        profileHistory: [
+            '성균관대 전자공학석사',
+            'Korda.us 중남미',
+            '정보통신 기술 컨설팅',
+        ],
     },
 
     {
@@ -165,18 +186,19 @@ Korda.us 중남미
         name: 'KEMO',
         position: 'ARABIC MANAGER',
         image: getFileUrl(profileName[13]),
-        profileHistory: `Jubail, Saudi Arabia
-성균관대 전자공학석사`,
+        profileHistory: ['Jubail, Saudi Arabia', '성균관대 전자공학석사'],
     },
     {
         id: 15,
         name: '나 덕 영',
         position: 'CHINA MANAGER',
         image: getFileUrl(profileName[14]),
-        profileHistory: `성균관대 중문학과
-중국 SONY전자 및 외주업체 근무
-중국 텐센트엑셀레이터
-㈜ STEA 중국사업부 이사`,
+        profileHistory: [
+            '성균관대 중문학과',
+            '중국 SONY전자 및 외주업체 근무',
+            '중국 텐센트엑셀레이터',
+            '㈜ STEA 중국사업부 이사',
+        ],
     },
 ];
 

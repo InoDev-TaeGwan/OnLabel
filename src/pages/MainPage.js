@@ -11,7 +11,9 @@ import ContactComponent from 'components/ContactComponent';
 
 const MainPage = () => {
     return (
-        <Layout whitePaper={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/whitepaper/211021_label_white_paper.pdf`}>
+        <Layout
+            whitePaper={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/whitepaper/211102%20stea%20white%20paper.pdf`}
+        >
             <MainBannerComponent />
             <ValueationComponent
                 video1={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/media/video1.mp4`}
