@@ -73,7 +73,8 @@
 
     .valueationContainer .itemBox .contentBox .title {
         font-size: 22px;
-        line-height: inherit;
+        line-height: 32px;
+
     }
 
     .valueationContainer .itemBox .contentBox .subTitle {
@@ -88,7 +89,6 @@
         padding: 0 13px;
         word-break: keep-all;
         white-space: revert;
-        line-height: 25px;
     }
 }
 
@@ -101,5 +101,6 @@
 }
 
 .valueationContainer .itemBox .contentBox.reverse .subTitle {
+    line-height: 25px;
 
 }

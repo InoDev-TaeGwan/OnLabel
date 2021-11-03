@@ -96,7 +96,7 @@
     }
     .mainVideoBannerContainer .title, .mainBannerContainer .title{
         font-size: 22px;
-        line-height: inherit;
+        line-height: 32px;
     }
     .mainVideoBannerContainer .subTitle, .mainBannerContainer .subTitle{
         font-size: 16px;

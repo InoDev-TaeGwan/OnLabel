@@ -20,7 +20,7 @@ const TeamComponent = () => {
     // console.log(dataResult);
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         autoplay: true,
         speed: 500,
