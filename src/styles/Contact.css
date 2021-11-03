@@ -42,6 +42,11 @@
     color: #707070;
     font-size: 16px;
 }
+.contactContainer .formContainer .left input:focus,.contactContainer .formContainer .right textarea:focus {
+    outline: 1.3px solid #3755F1;
+    border: 1.3px solid #3755F1;
+    caret-color:#3755F1;
+}
 .contactContainer .formContainer .left img{
     position: absolute;
     top: 50%;
@@ -57,7 +62,10 @@
     border-radius: 13px;
     padding:20px;
     resize: none;
+    font-size: 16px;
+    color: #707070;
 }
+
 .right .error{
     padding-left: 27px;
 }
@@ -92,22 +100,38 @@
         margin-bottom: 0;
     }
     .contactContainer .formContainer{
-        padding: 20px;
+        padding: 0;
+        box-shadow: inherit;
+        border-radius: inherit;
     }
     .contactContainer .formContainer .inputContainer{
         display: block;
         padding: 0;
+        margin-bottom: 20px;
+
     }
     .contactContainer .formContainer .left{
         width: inherit;
+    }
+    .contactContainer .formContainer .left .label,.contactContainer .formContainer .right .label{
+        margin-left: 0;
+        font-size: 14px;
 
+    }
+    .contactContainer .formContainer .left img{
+        width: 24px;
+        height: 24px;
+    }
+    .contactContainer .formContainer .left input{
+        font-size: 14px;
+        padding-left: 50px;
     }
     .contactContainer .formContainer .right textarea{
         width: 100%;
         margin-left: 0;
+        font-size: 14px;
     }
-    .contactContainer .formContainer .right .label{
-        margin-left: 0;
+    .contactContainer .formContainer .form_group{
+        margin-bottom: 25px;
     }
-
 }

@@ -1,23 +1,31 @@
-import React, {useCallback, useState} from 'react';
+import React, { useCallback, useState } from 'react';
 
-const SendMessage = ({handleSendMessage}) => {
-    const [sendHover,setSendHover] = useState(false);
-    const handleSendHover = useCallback(()=>{
-        setSendHover(!sendHover)
-    },[sendHover])
+const SendMessage = ({ handleSendMessage }) => {
+    const [sendHover, setSendHover] = useState(false);
+    const handleSendHover = useCallback(() => {
+        setSendHover(!sendHover);
+    }, [sendHover]);
     return (
         <>
-            {sendHover ?
-                <button className="SendMessageActive" onMouseEnter={handleSendHover} onMouseLeave={handleSendHover} onClick={handleSendMessage}>
-                Send Message
-            </button> : <button className="SendMessage" onMouseEnter={handleSendHover} onMouseLeave={handleSendHover} >
-                <div className="subBackground">
+            {sendHover ? (
+                <button
+                    className="SendMessageActive"
+                    onMouseEnter={handleSendHover}
+                    onMouseLeave={handleSendHover}
+                    onClick={handleSendMessage}
+                >
                     Send Message
-                </div>
-            </button>
-            }
+                </button>
+            ) : (
+                <button
+                    className="SendMessage"
+                    onMouseEnter={handleSendHover}
+                    onMouseLeave={handleSendHover}
+                >
+                    <div className="subBackground">Send Message</div>
+                </button>
+            )}
         </>
-
     );
 };
 

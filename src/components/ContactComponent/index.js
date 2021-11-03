@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import personIcon from 'assets/icons/person.svg';
 import mailIcon from 'assets/icons/mail.svg';
 import { dbService } from '../../FireBase';
@@ -11,6 +11,13 @@ const ContactComponent = () => {
         email: '',
         message: '',
     });
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const screenMobile = window.matchMedia('screen and (max-width: 768px)');
+        setIsMobile(screenMobile.matches);
+    }, []);
+
     // const [isSuccess, setIsSuccess] = useState(false);
     const [clickCount, setClickCount] = useState(0);
 
@@ -51,7 +58,7 @@ const ContactComponent = () => {
             <div className="formContainer">
                 <div className="inputContainer">
                     <div className="left">
-                        <div className="mb_50">
+                        <div className={`${isMobile ? 'form_group' : 'mb_50'}`}>
                             <span className="label">YOUR NAME</span>
                             <div className="p_relative">
                                 <input
@@ -69,7 +76,7 @@ const ContactComponent = () => {
                                 </span>
                             )}
                         </div>
-                        <div>
+                        <div className={`${isMobile ? 'form_group' : ' '}`}>
                             <span className="label">E-MAIL</span>
                             <div className="p_relative">
                                 <input
@@ -101,8 +108,17 @@ const ContactComponent = () => {
                         )}
                     </div>
                 </div>
-                <div >
-                    <SendMessage handleSendMessage={onSubmitContactUs} />
+                <div>
+                    {isMobile ? (
+                        <button
+                            className="SendMessageActive"
+                            onClick={onSubmitContactUs}
+                        >
+                            Send Message
+                        </button>
+                    ) : (
+                        <SendMessage handleSendMessage={onSubmitContactUs} />
+                    )}
                 </div>
                 {/*{isSuccess ? (*/}
                 {/*    <div>*/}
