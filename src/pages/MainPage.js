@@ -12,13 +12,13 @@ import ContactComponent from 'components/ContactComponent';
 const MainPage = () => {
     return (
         <Layout
-            whitePaper={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/whitepaper/211102%20stea%20white%20paper.pdf`}
+            whitePaper={`https://stea.s3.ap-northeast-2.amazonaws.com/whitepaper/211102+stea+white+paper.pdf`}
         >
             <MainBannerComponent />
             <ValueationComponent
-                video1={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/media/video1.mp4`}
-                video2={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/media/video2.mp4`}
-                video3={`https://storage.googleapis.com/onlabel-cbe22.appspot.com/media/video3.mp4`}
+                video1={`https://stea.s3.ap-northeast-2.amazonaws.com/video/video1.mp4`}
+                video2={`https://stea.s3.ap-northeast-2.amazonaws.com/video/video2.mp4`}
+                video3={`https://stea.s3.ap-northeast-2.amazonaws.com/video/video3.mp4`}
             />
             <BannerComponent />
             <RoadmapComponent />

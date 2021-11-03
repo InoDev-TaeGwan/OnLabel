@@ -9,7 +9,7 @@ const Profile = memo(({ name, position, image, profileHistory, mobile }) => {
         setIsFlipped((prevState) => !prevState.isFlipped);
     }, []);
 
-    console.log(profileHistory);
+    // console.log(profileHistory);
 
     return (
         <>
@@ -33,14 +33,15 @@ const Profile = memo(({ name, position, image, profileHistory, mobile }) => {
                             </div>
                         </div>
                         <div className="profileHistory" onClick={handleFlip}>
-                            <ul>
-                                {/*{profileHistory.map((history, index) => (*/}
-                                {/*    <ProfileHistory*/}
-                                {/*        key={index}*/}
-                                {/*        history={history}*/}
-                                {/*    />*/}
-                                {/*))}*/}
-                            </ul>
+                            {/*<ul>*/}
+                            {/*    {profileHistory.map((history, index) => (*/}
+                            {/*        <ProfileHistory*/}
+                            {/*            key={index}*/}
+                            {/*            history={history}*/}
+                            {/*        />*/}
+                            {/*    ))}*/}
+                            {/*</ul>*/}
+                            {profileHistory}
                         </div>
                     </ReactCardFlip>
                 </div>
@@ -55,7 +56,7 @@ const Profile = memo(({ name, position, image, profileHistory, mobile }) => {
                             <img src={image} alt="profileImage" width="100%" />
                         </div>
                     </div>
-                    {/*<div className="profileHistory">{profileHistory}</div>*/}
+                    <div className="profileHistory">{profileHistory}</div>
                 </div>
             )}
         </>

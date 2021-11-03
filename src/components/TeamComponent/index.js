@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import Profile from 'shared/Profile';
 import { partnerData } from 'utils/dumy.js';
+// import { partnerData } from 'utils/dumy_test.js';
 
 const TeamComponent = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -17,7 +18,7 @@ const TeamComponent = () => {
     const dataResult = [];
     for (let i = 0; i < data.length; i += 4)
         dataResult.push(data.slice(i, i + 4));
-    console.log(dataResult);
+    // console.log(dataResult);
 
     const settings = {
         dots: false,
