@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import steaLogo from 'assets/images/Logo3.png';
 
 const SignInComponent = () => {
     const [email, setEmail] = useState('');
@@ -43,28 +44,29 @@ const SignInComponent = () => {
         <ThemeProvider theme={theme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
+                <Grid item xs={6} sm={6} md={6}>
+                    <div className="signIn-side-wrap">
+                        <div className="signIn-side-img-container">
+                            <img src={steaLogo} alt="logo3" />
+                        </div>
+                        <div>
+                            <span className="signIn-info">
+                                <b>STEA</b>는 스텔스기를 뜻하는 Stealth와
+                            </span>
+                            <span className="signIn-info">
+                                QR 코드 기술을 뜻하는 Technology의 합성어입니다.
+                            </span>
+                            <span className="signIn-info">
+                                다양한 종류의 QR 코드를 생성해보세요.
+                            </span>
+                        </div>
+                    </div>
+                </Grid>
                 <Grid
                     item
-                    xs={false}
-                    sm={4}
-                    md={7}
-                    sx={{
-                        backgroundImage:
-                            'url(https://storage.googleapis.com/onlabel-cbe22.appspot.com/logo/Logo.png)',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundColor: (t) =>
-                            t.palette.mode === 'dark'
-                                ? t.palette.grey[50]
-                                : t.palette.grey[900],
-                        backgroundSize: 'contain',
-                        backgroundPosition: 'center',
-                    }}
-                />
-                <Grid
-                    item
-                    xs={12}
-                    sm={8}
-                    md={5}
+                    xs={6}
+                    sm={6}
+                    md={6}
                     component={Paper}
                     elevation={6}
                     square
@@ -72,6 +74,7 @@ const SignInComponent = () => {
                         display: 'flex',
                         justifyContent: 'center',
                         alignItems: 'center',
+                        boxShadow: 'none',
                     }}
                 >
                     <Box
