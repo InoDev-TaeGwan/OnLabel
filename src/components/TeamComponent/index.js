@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import Profile from 'shared/Profile';
 import { partnerData } from 'utils/dumy.js';
-// import { partnerData } from 'utils/dumy_test.js';
 
 const TeamComponent = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -23,7 +22,7 @@ const TeamComponent = () => {
     const settings = {
         dots: false,
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,

@@ -89,6 +89,9 @@
         height: 615px;
         margin-bottom: 0;
         background-position: center;
+        /*background-size: contain;*/
+        background-image: url("assets/images/MainBannerBG_mobile.png");
+
 
     }
     .mainVideoBannerContainer .title, .mainBannerContainer .title{
