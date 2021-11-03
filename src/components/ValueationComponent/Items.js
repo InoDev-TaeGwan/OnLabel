@@ -10,7 +10,7 @@ const Items = ({ reverse, title, subTitle, video }) => {
                         <span className="subTitle">{subTitle}</span>
                     </div>
                     <div className="video">
-                        <video muted autoPlay loop>
+                        <video muted autoPlay loop playsInline>
                             <source src={video} />
                         </video>
                     </div>
@@ -18,7 +18,7 @@ const Items = ({ reverse, title, subTitle, video }) => {
             ) : (
                 <>
                     <div className="video">
-                        <video muted autoPlay loop>
+                        <video muted autoPlay loop playsInline>
                             <source src={video} />
                         </video>
                     </div>

@@ -193,6 +193,8 @@
     .wrap{
         max-width: 360px;
         overflow: hidden;
+        margin-bottom: 100px;
+        /*padding: 0 30px;*/
     }
     .sideMenu{
         display: none;

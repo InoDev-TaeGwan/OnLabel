@@ -1,31 +1,32 @@
-.valueationContainer .itemBox{
+.valueationContainer .itemBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 165px;
 }
-.valueationContainer .itemBox:last-child{
+
+.valueationContainer .itemBox:last-child {
     margin-bottom: 0;
 }
 
-.valueationContainer .itemBox .video{
+.valueationContainer .itemBox .video {
     width: 654px;
     height: 374px;
     border-radius: 32px;
     filter: drop-shadow(0px 8px 30px rgba(55, 142, 241, 0.16));
 }
 
-.valueationContainer .itemBox .video video{
+.valueationContainer .itemBox .video video {
     width: 100%;
     height: 100%;
 }
 
-.valueationContainer .itemBox .contentBox.reverse .title,.valueationContainer .itemBox .contentBox.reverse .subTitle{
+.valueationContainer .itemBox .contentBox.reverse .title, .valueationContainer .itemBox .contentBox.reverse .subTitle {
     text-align: left;
 }
 
-.valueationContainer .itemBox .contentBox .title{
+.valueationContainer .itemBox .contentBox .title {
     font-weight: bold;
     font-size: 30px;
     line-height: 45px;
@@ -35,7 +36,8 @@
     white-space: pre-wrap;
     word-break: break-all
 }
-.valueationContainer .itemBox .contentBox .subTitle{
+
+.valueationContainer .itemBox .contentBox .subTitle {
     text-align: right;
     font-size: 18px;
     line-height: 27px;
@@ -43,38 +45,61 @@
     white-space: pre-wrap;
     word-break: break-all
 }
-@media screen and (max-width: 1550px){
-    .valueationContainer .itemBox .video{
-     width:570px;
+
+@media screen and (max-width: 1550px) {
+    .valueationContainer .itemBox .video {
+        width: 570px;
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     /* 타블렛 가로 */
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     /* 모바일 가로, 타블렛 세로 */
-    .title{
+    .title {
         font-size: 18px;
     }
-    .valueationContainer .itemBox{
+
+    .valueationContainer {
+        margin-top: -60px;
+    }
+
+    .valueationContainer .itemBox {
         display: block;
+        margin-bottom: 40px;
     }
-    .valueationContainer .itemBox .contentBox .title{
-        font-size: 18px;
+
+    .valueationContainer .itemBox .contentBox .title {
+        font-size: 22px;
         line-height: inherit;
     }
-    .valueationContainer .itemBox .contentBox .subTitle{
-        font-size: 12px;
+
+    .valueationContainer .itemBox .contentBox .subTitle {
+        font-size: 16px;
         line-height: inherit;
     }
-    .valueationContainer .itemBox .contentBox.reverse .title,.valueationContainer .itemBox .contentBox.reverse .subTitle{
+
+    .valueationContainer .itemBox .contentBox.reverse .title, .valueationContainer .itemBox .contentBox.reverse .subTitle {
         text-align: center;
+        /*white-space: pre;
+        */
+        padding: 0 13px;
+        word-break: keep-all;
+        white-space: revert;
+        line-height: 25px;
     }
-    .valueationContainer .itemBox .video{
-        /*width: 360px;*/
-        width: 300px;
-        margin: 0 auto;
-    }
+}
+
+.valueationContainer .itemBox .video {
+    /*width: 300px;*/
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+    filter: inherit;
+}
+
+.valueationContainer .itemBox .contentBox.reverse .subTitle {
+
 }

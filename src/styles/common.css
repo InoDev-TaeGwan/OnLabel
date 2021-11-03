@@ -352,4 +352,17 @@
         font-size: 24px;
         margin-bottom: 23px;
     }
+    .CreateNFT_shadow{
+        width: 189px;
+        height: 44px;
+    }
+    .CreateNFTActive_shadow{
+        width: 189px;
+        height: 44px;
+    }
+    .CreateNFTActive_shadow .subBackground{
+        width: 185px;
+        height: 40px;
+        line-height: 40px;
+    }
 }

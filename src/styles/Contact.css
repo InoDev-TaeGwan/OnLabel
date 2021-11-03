@@ -95,7 +95,7 @@
 }
 @media screen and (max-width:768px){
     .contactContainer{
-        padding: 0 20px;
+        /*padding: 0 20px;*/
         padding-bottom: 40px;
         margin-bottom: 0;
     }

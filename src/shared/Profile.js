@@ -6,7 +6,7 @@ const Profile = memo(({ name, position, image, profileHistory, mobile }) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const handleFlip = useCallback((e) => {
         e.preventDefault();
-        setIsFlipped((prevState) => !prevState.isFlipped);
+        setIsFlipped((prev) => !prev);
     }, []);
 
     return (

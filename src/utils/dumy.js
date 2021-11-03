@@ -21,6 +21,7 @@ const profileName = [
     'gwangsoo.png',
     'ChaWooJoon.png',
     'fengShiliang.png',
+    'kimchulhwan.png',
 ];
 
 const getFileUrl = (fileName) =>
@@ -239,6 +240,16 @@ BTbridge lnc. CEO`,
         profileHistory: `서울대학교 사회학과 졸업
 MODORI 파트너
 thepaper.cn reporter of culture dept.`,
+    },
+    {
+        id: 7,
+        name: '김 철 환',
+        position: '사업고문',
+        image: getFileUrl(profileName[21]),
+        profileHistory: `한양대 공대 교수
+서울대 전자공학 졸업 
+NIPA 블록체인 심사관
+지디넷코리아 특별전문위원`,
     },
     //   {
     //     id: 2,
