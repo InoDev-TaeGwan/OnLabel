@@ -86,10 +86,10 @@
     width: calc(100% - 20px);
     height: 154px;
     margin: 0 auto;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     background: #FFFFFF;
     /* picture shadow */
-    box-shadow: 0 8px 30px rgba(55, 142, 241, 0.16);
+    box-shadow: 0 8px 30px rgba(55, 142, 241, 0.1);
     border-radius: 26px;
     padding: 0 20px;
     box-sizing: border-box;
