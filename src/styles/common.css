@@ -100,7 +100,7 @@
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage {
     /*width: 100%;*/
-    width: calc(340px - 20px);
+    width: calc(340px - 80px);
     height: 84px;
     background-color: #fff;
 
@@ -145,7 +145,7 @@
 }
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .profileHistory, .profileBox_mobile .profile_group .profile_mobile .profileHistory {
-    width: calc(340px - 20px);
+    width: calc(340px - 80px);
     /*min-height: 82px;*/
     background-color: #fff;
     text-align: center;

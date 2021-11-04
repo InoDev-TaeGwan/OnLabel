@@ -194,7 +194,8 @@
         max-width: 360px;
         overflow: hidden;
         margin-bottom: 100px;
-        /*padding: 0 30px;*/
+        padding: 0 30px;
+        box-sizing: border-box;
     }
     .sideMenu{
         display: none;

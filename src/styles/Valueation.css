@@ -86,21 +86,21 @@
         text-align: center;
         /*white-space: pre;
         */
-        padding: 0 13px;
+        /*padding: 0 13px;*/
         word-break: keep-all;
         white-space: revert;
     }
+    .valueationContainer .itemBox .video {
+        /*width: 300px;*/
+        width: 100%;
+        height: 245px;
+        margin: 0 auto;
+        filter: inherit;
+    }
+
+    .valueationContainer .itemBox .contentBox.reverse .subTitle {
+        line-height: 25px;
+    }
+
 }
 
-.valueationContainer .itemBox .video {
-    /*width: 300px;*/
-    width: 100%;
-    height: 245px;
-    margin: 0 auto;
-    filter: inherit;
-}
-
-.valueationContainer .itemBox .contentBox.reverse .subTitle {
-    line-height: 25px;
-
-}
