@@ -97,6 +97,9 @@
     align-items: center;
     justify-content: center
 }
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0), .adviserContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0){
+    margin-bottom: 0;
+}
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage {
     /*width: 100%;*/

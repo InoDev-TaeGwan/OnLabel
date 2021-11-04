@@ -29,7 +29,7 @@ const TeamComponent = () => {
     };
 
     return (
-        <div className="teamAContainer wrap" id="team">
+        <div className="teamAContainer wrap" id="team" style={{}}>
             <span className="title">TEAM</span>
             {isMobile ? (
                 <div className="profileBox_mobile">

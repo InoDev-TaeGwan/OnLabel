@@ -44,6 +44,7 @@
 }
 .contactContainer .formContainer .left input:focus,.contactContainer .formContainer .right textarea:focus {
     outline: 1.3px solid #3755F1;
+    outline-width: 0;
     border: 1.3px solid #3755F1;
     border-radius: 13px;
     caret-color:#3755F1;
