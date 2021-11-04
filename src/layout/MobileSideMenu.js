@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import Logo from 'assets/images/LogoSmall.png';
 import Close from 'assets/icons/close_gray.svg';
 import CreateNFT from 'shared/CreateNFT';
-import WhitePaper from '../shared/WhitePaper';
+import WhitePaper from 'shared/WhitePaper';
 
 const MobileSideMenu = ({
     whitePaper,
@@ -35,7 +35,9 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName">About</span>
+                        <span className="navName" onClick={handleCloseMenu}>
+                            About
+                        </span>
                     </Link>
                     <Link
                         activeClass="sideActive"
@@ -43,7 +45,9 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName">Roadmap</span>
+                        <span className="navName" onClick={handleCloseMenu}>
+                            Roadmap
+                        </span>
                     </Link>
                     <Link
                         activeClass="sideActive"
@@ -51,7 +55,9 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName">Partners</span>
+                        <span className="navName" onClick={handleCloseMenu}>
+                            Partners
+                        </span>
                     </Link>
                     <Link
                         activeClass="sideActive"
@@ -59,7 +65,9 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName">Team</span>
+                        <span className="navName" onClick={handleCloseMenu}>
+                            Team
+                        </span>
                     </Link>
                     <Link
                         activeClass="sideActive"
@@ -67,7 +75,9 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName">Adviser</span>
+                        <span className="navName" onClick={handleCloseMenu}>
+                            Adviser
+                        </span>
                     </Link>
                     <Link
                         activeClass="sideActive"
@@ -75,7 +85,12 @@ const MobileSideMenu = ({
                         spy={true}
                         smooth={true}
                     >
-                        <span className="navName last">Contact</span>
+                        <span
+                            className="navName last"
+                            onClick={handleCloseMenu}
+                        >
+                            Contact
+                        </span>
                     </Link>
                     <CreateNFT
                         single
