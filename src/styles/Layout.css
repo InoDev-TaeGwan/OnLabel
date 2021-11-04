@@ -270,6 +270,7 @@
     width: 100%;
     z-index: 1;
     border: 1px solid #F1F1F1;
+    display: none;
 }
 
 .navigationContainer {
@@ -310,6 +311,9 @@
 
     .sideMenu {
         display: none;
+    }
+    .navigation{
+        display: block;
     }
 }
 
