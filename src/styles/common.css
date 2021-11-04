@@ -100,7 +100,7 @@
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage {
     /*width: 100%;*/
-    width: calc(340px - 80px);
+    width: calc(340px - 90px);
     height: 84px;
     background-color: #fff;
 
@@ -124,6 +124,7 @@
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .namePosition, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .namePosition {
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 4px;
 }
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage img, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage img {
@@ -132,14 +133,14 @@
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .name, .profileBox_mobile .profile_group .profile_mobile .nameImage .name {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     display: block;
     margin-bottom: 10px;
 }
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .position, .profileBox_mobile .profile_group .profile_mobile .nameImage .position {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     color: #3755F1;
     display: block;
 }
