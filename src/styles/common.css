@@ -321,6 +321,43 @@
     font-size: 18px;
 }
 
+/* White Paper */
+.whitePaperDown {
+    background: rgba(36, 124, 238, 0.1);
+    border-radius: 23px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+
+.whitePaperDown .whitePaperTitle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #3755F1;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.whitePaperDown img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17.5px;
+    height: 18px;
+}
+
+.whitePaperDown:hover img {
+    position: relative;
+    animation: slideArrow 1.1s linear infinite;
+}
+.whitePaperDown.sideMenuWhitePaper{
+    background-color: inherit;
+    border-radius: inherit;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+
 @media screen and (max-width: 1550px) {
     .teamAContainer .profileBox .profile, .adviserContainer .profileBox .profile {
         height: auto;
@@ -367,4 +404,14 @@
         height: 40px;
         line-height: 40px;
     }
+
+    .footerContainer .footerContentBox .whitePaper .whitePaperDown {
+        padding: 10px 0;
+        width: 218px;
+    }
+
+    .footerContainer .footerContentBox .whitePaper .whitePaperDown span {
+        font-size: 14px;
+    }
+
 }

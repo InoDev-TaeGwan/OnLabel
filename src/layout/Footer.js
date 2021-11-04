@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Logo from 'assets/images/Logo2.png';
-import arrow from 'assets/icons/arrow(blue).svg';
+import WhitePaper from '../shared/WhitePaper';
 
 const Footer = ({ whitePaper }) => {
     return (
@@ -11,12 +11,13 @@ const Footer = ({ whitePaper }) => {
                     <div className="labelLogo">
                         <img src={Logo} alt="LabelLogo" width="100%" />
                     </div>
-                    <button className="whitePaperDown">
-                        <a href={whitePaper} target="blank">
-                            <span>WHITE PAPER</span>
-                            <img src={arrow} alt="arrow icon" />
-                        </a>
-                    </button>
+                    {/*<button className="whitePaperDown">*/}
+                    {/*    <a href={whitePaper} target="blank">*/}
+                    {/*        <span>WHITE PAPER</span>*/}
+                    {/*        <img src={arrow} alt="arrow icon" />*/}
+                    {/*    </a>*/}
+                    {/*</button>*/}
+                    <WhitePaper whitePaper={whitePaper} />
                 </div>
                 <div className="privacyPolicy">
                     <span className="footerTitle">PRIVACY POLICY</span>
