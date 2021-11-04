@@ -22,3 +22,4 @@
 
 
 *{margin: 0; padding:0; font-family: 'Montserrat','Noto Sans KR' , sans-serif; color:#333;}
+input{appearance: none; -moz-appearance: none; /* Firefox */ -webkit-appearance: none; /* Safari and Chrome */ border-radius: 0;}
