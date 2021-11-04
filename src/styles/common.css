@@ -83,10 +83,10 @@
 }
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile, .adviserContainer .profileBox_mobile .profile_group .profile_mobile {
-    width: calc(100% - 20px);
+    width: calc(100% - 23px);
     height: 154px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     background: #FFFFFF;
     /* picture shadow */
     box-shadow: 0 8px 30px rgba(55, 142, 241, 0.1);
@@ -107,8 +107,8 @@
 }
 
 .teamAContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage, .adviserContainer .profileBox_mobile .profile_group .profile_mobile .nameImage .profileImage {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     /*border: 2px solid rgba(255, 255, 255, 0.3);*/
     border: 2px solid rgba(90, 90, 90, 0.3);
     border-radius: 50%;
@@ -153,6 +153,7 @@
     white-space: pre-wrap;
     word-break: break-all;
     line-height: 19px;
+    letter-spacing: -1px;
 }
 
 /* Create NFT button */
