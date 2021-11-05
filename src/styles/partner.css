@@ -1,22 +1,23 @@
-.partnersContainer .itemBox{
+.partnersContainer .itemBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 165px;
 }
-.partnersContainer .itemBox:last-child{
+
+.partnersContainer .itemBox:last-child {
     margin-bottom: 0;
 }
 
-.partnersContainer .itemBox .partnerImage{
+.partnersContainer .itemBox .partnerImage {
     width: 654px;
     border-radius: 32px;
     filter: drop-shadow(0px 8px 30px rgba(55, 142, 241, 0.16));
     text-align: center;
 }
 
-.partnersContainer .itemBox .partnerImage .imageTitle{
+.partnersContainer .itemBox .partnerImage .imageTitle {
     font-weight: bold;
     font-size: 24px;
     text-align: center;
@@ -25,24 +26,26 @@
     margin-bottom: 17px;
 }
 
-.partnersContainer .itemBox .contentBox{
+.partnersContainer .itemBox .contentBox {
 
 }
 
-.partnersContainer .itemBox .contentBox .title{
+.partnersContainer .itemBox .contentBox .title {
     font-weight: bold;
     font-size: 38px;
     line-height: 45px;
     margin-bottom: 50px;
     display: block;
 }
-.partnersContainer .itemBox .contentBox .companyName{
+
+.partnersContainer .itemBox .contentBox .companyName {
     font-weight: bold;
     display: block;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.partnersContainer .itemBox .contentBox .contentText{
+
+.partnersContainer .itemBox .contentBox .contentText {
     font-size: 15px;
     line-height: 24px;
     display: block;
@@ -50,41 +53,64 @@
     word-break: break-all
 }
 
-@media screen and (max-width: 1550px){
+@media screen and (max-width: 1550px) {
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1450px) {
     /* 타블렛 가로 */
+    .partnersContainer .itemBox .contentBox .title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .partnersContainer .itemBox .contentBox .companyName {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .partnersContainer .itemBox .contentBox .contentText{
+        font-size: 14px;
+    }
+    .partnersContainer .itemBox .partnerImage .imageTitle{
+        font-size: 20px;
+    }
+    .partnersContainer .itemBox .partnerImage{
+        width: 600px;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     /* 모바일 가로, 타블렛 세로 */
-    .partnersContainer .itemBox{
+    .partnersContainer .itemBox {
         display: block;
         text-align: center;
         margin-bottom: 100px;
     }
-    .partnersContainer .itemBox .contentBox .title{
+
+    .partnersContainer .itemBox .contentBox .title {
         line-height: inherit;
         font-size: 24px;
         margin-bottom: 20px;
     }
-    .partnersContainer .itemBox .contentBox .companyName{
+
+    .partnersContainer .itemBox .contentBox .companyName {
         line-height: inherit;
         font-size: 18px;
         margin-bottom: 10px;
     }
-    .partnersContainer .itemBox .contentBox .contentText{
+
+    .partnersContainer .itemBox .contentBox .contentText {
         line-height: inherit;
         font-size: 16px;
         word-break: keep-all;
         white-space: revert;
     }
-    .partnersContainer .itemBox .partnerImage .imageTitle{
+
+    .partnersContainer .itemBox .partnerImage .imageTitle {
         font-size: 18px;
         margin-bottom: 17px;
     }
-    .partnersContainer .itemBox .partnerImage{
+
+    .partnersContainer .itemBox .partnerImage {
         margin: 0 auto;
         width: 100%;
     }

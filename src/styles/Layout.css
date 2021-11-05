@@ -305,18 +305,23 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
     /* 타블렛 가로 */
     .wrap {
         max-width: 1000px;
         padding-left: 0;
     }
-
+    .navigationContainer{
+        max-width: 1000px;
+    }
     .sideMenu {
         display: none;
     }
     .navigation{
         display: block;
+    }
+    .footerContentBox{
+        max-width: 1000px;
     }
 }
 

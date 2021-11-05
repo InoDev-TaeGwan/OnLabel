@@ -52,8 +52,17 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
     /* 타블렛 가로 */
+    .valueationContainer .itemBox .video {
+        width: 500px;
+    }
+    .valueationContainer .itemBox .contentBox .title{
+        font-size: 30px;
+    }
+    .valueationContainer .itemBox .contentBox .subTitle{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {

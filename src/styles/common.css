@@ -97,7 +97,8 @@
     align-items: center;
     justify-content: center
 }
-.teamAContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0), .adviserContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0){
+
+.teamAContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0), .adviserContainer .profileBox_mobile .profile_group .profile_mobile:nth-child(4n+0) {
     margin-bottom: 0;
 }
 
@@ -353,7 +354,8 @@
     position: relative;
     animation: slideArrow 1.1s linear infinite;
 }
-.whitePaperDown.sideMenuWhitePaper{
+
+.whitePaperDown.sideMenuWhitePaper {
     background-color: inherit;
     border-radius: inherit;
     margin-bottom: 30px;
@@ -367,8 +369,12 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1450px) {
     /* 타블렛 가로 */
+    .title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -378,8 +384,9 @@
         height: 35px;
         font-size: 14px;
     }
-    .SendMessage .subBackground{
-        width:146px;
+
+    .SendMessage .subBackground {
+        width: 146px;
         height: 32px;
         line-height: 31px;
         font-size: 14px;
@@ -394,15 +401,18 @@
         font-size: 24px;
         margin-bottom: 23px;
     }
-    .CreateNFT_shadow{
+
+    .CreateNFT_shadow {
         width: 189px;
         height: 44px;
     }
-    .CreateNFTActive_shadow{
+
+    .CreateNFTActive_shadow {
         width: 189px;
         height: 44px;
     }
-    .CreateNFTActive_shadow .subBackground{
+
+    .CreateNFTActive_shadow .subBackground {
         width: 185px;
         height: 40px;
         line-height: 40px;

@@ -24,7 +24,11 @@
         padding-left: 300px;
     }
 }
-@media screen and (max-width:1200px){}
+@media screen and (max-width:1450px){
+    .roadmapContainer .title{
+        padding-left: 165px;
+    }
+}
 @media screen and (max-width:768px){
     .roadmapContainer{
         margin-bottom: 100px;
